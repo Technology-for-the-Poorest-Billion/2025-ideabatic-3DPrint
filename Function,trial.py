@@ -1,5 +1,5 @@
 import numpy as np
-
+import matplotlib.pyplot as plt
 def Rth_radial(r1, r2, k, l):
     return np.log(r2 / r1) / (2 * np.pi * l * k)
 
@@ -9,11 +9,12 @@ def Rth_linear(t, A, k):
 def convection_resistance(r_outer, h, l):
     return 1 / (2 * np.pi * r_outer * l * h)
 
-def estimate_performance(r_ice, l, t_insulation, t_air, t_foam,
+#nice function. I have modified it though so that m_ice changes with r_ice - will allow us to easily consider effect of different ice masses (for given length)
+def estimate_performance(r_ice, l, t_insulation, t_air, t_foam, m_ice=0,
                          k_insulation=0.03, k_air=0.024, k_foam=0.03,
                          h_air=5, h_outer=10, T_e=30, T_ice=0,
-                         m_ice=2.5, SLH_ice=334000):
-    
+                         SLH_ice=334000):
+    m_ice = r_ice *r_ice * np.pi *0.1275 * 1000 #added this.
     # Radial distances
     r_insulation = r_ice + t_insulation
     r_air = r_insulation + t_air
@@ -57,10 +58,12 @@ def estimate_performance(r_ice, l, t_insulation, t_air, t_foam,
         "t_cool_hours": t_cool_hours,
         "T_edge_insulation": T_edge_insulation,
         "T_edge_air": T_edge_air,
-        "outer_diameter_cm": 2 * r_foam * 100
+        "outer_diameter_cm": 2 * r_foam * 100,
+        "Total_mass_of_ice": m_ice
     }
 
 # Example usage
+"""
 result = estimate_performance(
     r_ice=0.08,
     l=0.2,
@@ -68,7 +71,68 @@ result = estimate_performance(
     t_air=0.04,
     t_foam=0.08
 )
+hours = result["t_cool_hours"]
+print(hours)"""
+#defining variables for plotting
+fig, ax = plt.subplots() 
+thickness = np.linspace(0,0.1,1000)
+hourlistfoam = np.zeros(1000)
+totaldiameterfoam = np.zeros(1000)
+totaldiameterice = np.zeros(1000)
+hourlistmass = np.zeros(1000)
+totalmassice = np.zeros(1000)
 
-for k, v in result.items():
+for i in range(1000):
+    result = estimate_performance(
+    r_ice=0.05,
+    l=0.15,
+    t_insulation=0.005,
+    t_air=0.04,
+    t_foam= thickness[i],
+    )
+    hours = result["t_cool_hours"]
+    hourlistfoam[i] = hours
+    totaldiameterfoam[i] = result["outer_diameter_cm"]
+
+for i in range(1000):
+    result = estimate_performance(
+    r_ice=thickness[i],
+    l=0.15,
+    t_insulation=0.005,
+    t_air=0.04,
+    t_foam=0.04,
+    )
+    hours = result["t_cool_hours"]
+    hourlistmass[i] = hours
+    totaldiameterice[i] = result["outer_diameter_cm"]
+    totalmassice[i] = result["Total_mass_of_ice"]
+
+result = estimate_performance(
+    r_ice=0.05,
+    l=0.15,
+    t_insulation=0.005,
+    t_air=0.04,
+    t_foam=0.04,
+    )
+
+d_ice_one_kg = result["outer_diameter_cm"]
+#print(d_ice_one_kg)
+#overlay this plot with payload - range data from ISS aerospace to get a feeling for the tradeoff. I think 1kg is a good decision, which last year came to and this verifies that.
+
+ax.plot(totaldiameterfoam, hourlistfoam, label = "changing insulation thickness")
+plt.axvline(x = d_ice_one_kg, color='r', linestyle='--', label='M = 1kg')
+ax.plot(totaldiameterice, hourlistmass, label = "changing mass of ice")  # Plot some data on the Axes.
+#ax.plot(totalmassice, hourlistmass, label = "changing mass of ice")#superpose with iss aerospace data
+ax.set_xlabel('Cooler diamter (cm)')  # Add an x-label to the Axes.
+ax.set_ylabel('cool life (hours)')  # Add a y-label to the Axes.
+ax.set_title("Thermal performance plot")  # Add a title to the Axes.
+ax.legend()
+ax.grid(True)
+plt.show()                           # Show the figure.
+
+
+"""
+for k, v in result.items(): #result is a dictionary 
     print(f"{k}: {round(v, 2)}")
 
+"""
