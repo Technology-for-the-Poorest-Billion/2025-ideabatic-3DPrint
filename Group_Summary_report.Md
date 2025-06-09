@@ -23,7 +23,7 @@ We played to each others strengths well, and were able to learn and develop from
 
 Not everything went smoothly, and in hindsight, the thermal test of our initial prototype should have been better planned, with access to the required equipment proving difficult and requiring some ingenuity. Time should have also been allocated to consider test and failed prints, with hardwork and effective troubleshooting required to develop our initial prototype in time for the interim presentation.  
 
-For the CAD development, we opted to use OnShape - an browser based software that allowed our team to easily share and collaborate on the design. This was very effective, and allowed us to start collaborative CAD development immediately. 
+For the CAD development, we opted to use OnShape - a browser based software that allowed our team to easily share and collaborate on the design. This was very effective, and allowed us to start collaborative CAD development immediately. 
 
 Each team member spent some time becoming familiar with GIT, and this proved very beneficial to our team working abilitiy. In a manner similar to onshape, we were able to quickly develop code, with Oliver and Husaain developing their thermal simulation remotely.The repositry was also incredibly useful as a central hub for all our documentation, and we hope it will become a rich resource for Ideabatic as they continue to develop SMILE.
 
