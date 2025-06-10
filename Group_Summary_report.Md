@@ -28,3 +28,10 @@ For the CAD development, we opted to use OnShape - a browser based software that
 Each team member spent some time becoming familiar with GIT, and this proved very beneficial to our team working abilitiy. In a manner similar to onshape, we were able to quickly develop code, with Oliver and Husaain developing their thermal simulation remotely.The repositry was also incredibly useful as a central hub for all our documentation, and we hope it will become a rich resource for Ideabatic as they continue to develop SMILE.
 
 
+
+# Technical overview
+
+## Design brief
+The design brief of the project is highlighted as follows
+
+!(/workspaces/2025-ideabatic-3DPrint/Images/Design brief.png)
