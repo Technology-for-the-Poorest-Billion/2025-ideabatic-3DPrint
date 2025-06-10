@@ -33,3 +33,24 @@ This gives a print time of 3 and a half days per carousel with a Bambu x1c, 6 da
 
 Assuming the printer is running for half a year continously, splitting the £1000 cost of a bambu x1c, this adds a  **£10 3D printer cost**
 
+
+# Sundries BOM
+| Name                      | Description                                              | Cost (£) |
+|---------------------------|----------------------------------------------------------|----------|
+| Upper Mid Plate           | Laser cut from 3mm MDF                                   | 1.00     |
+| Lower Mid Plate           | Laser cut from 3mm MDF                                   | 1.00     |
+| 104x Pop Rivets           | 3.2x12mm, £7.15/100 (CUED stores)                         | 7.44     |
+| 3x M6 Studding (100mm)    | £2.50/m → 0.3m total                                      | 0.75     |
+| 8x M5 Heat-set Inserts     | £13 for 50 → £0.26 each                                  | 2.08     |
+| 3x M5x20 Cap Head Screws  | 2p each (CUED stores)                                     | 0.06     |
+| 5x M5x40 Cap Head Screws  | 2p each (CUED stores)                                     | 0.10     |
+| 1m Gasket Tape (10mm)     | £7 for 10m → £0.70/m                                      | 0.70     |
+| 15x 10x2mm Magnets        | £8 for 50 → £0.16 each                                    | 2.40     |
+| Expanding Foam            | Approx. 1 can @ £8.79                                     | 8.79     |
+| Epoxy Adhesive (JB Weld)  | Approx. £2 worth per icebox                               | 2.00     |
+| **Total**                 |                                                          | **26.32**|
+
+
+
+# Total cost : £65
+Including the cost of the 3d printer, the gives a cost per prototype icebox of around. The major concern with manufacture will be with quality and the low speed of 3D printers. 
