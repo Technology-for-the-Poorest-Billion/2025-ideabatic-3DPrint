@@ -30,8 +30,12 @@ Each team member spent some time becoming familiar with GIT, and this proved ver
 
 
 # Technical overview
+The technical overview is broken up into three sections
+* Design brief and context 
+* Technical summary
+* Next steps and recommendations
 
-## Design brief
-The design brief of the project is highlighted as follows
+## Design brief and context
+Ideabatic has developed the SMILE icebox for transporting vaccines to remote locations 
 
-!(/workspaces/2025-ideabatic-3DPrint/Images/Design brief.png)
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Design%20brief.png
