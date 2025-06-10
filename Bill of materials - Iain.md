@@ -53,4 +53,5 @@ Assuming the printer is running for half a year continously, splitting the £100
 
 
 # Total cost : £65
+
 Including the cost of the 3d printer, the gives a cost per prototype icebox of around. The major concern with manufacture will be with quality and the low speed of 3D printers. 
