@@ -68,10 +68,20 @@ With an estimated material cost of [£65](https://github.com/Technology-for-the-
 ### 2: Engineering lessons
 Alongside the finished prototypes, one of the most useful lessons learnt from this project are the engineering lessons learnt throughout the project.
 
+General concept is good
+
+learnt how to split 3d prints
+
+lots about 3d printing in real life
+
+general concept of locating plate is very good 
+
+
+
 
 
 ### 3: Quality control
-
+A key hope for this project is the possibility of local manufacture 
 
 ### 4: Thermodynamics
 A key aspect of the project was 
