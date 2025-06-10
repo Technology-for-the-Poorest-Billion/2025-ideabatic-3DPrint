@@ -36,6 +36,12 @@ The technical overview is broken up into three sections
 * Next steps and recommendations
 
 ## Design brief and context
-Ideabatic has developed the SMILE icebox for transporting vaccines to remote locations 
+Ideabatic has developed the SMILE icebox for transporting vaccines to remote locations show below in the image
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Smile%20icebox.png) 
 
-![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Design%20brief.png
+This icebox provides significant usability and performance benefits over existing iceboxes, with a vaccine cool life of over 4 days whereas conventional vaccine iceboxes through a combination of poor usage and design. However currently these iceboxes are CNC machined, which is very costly and not scalable.
+
+As such the following design brief was given to help Ideabatic further develop the SMILE icebox
+
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Design%20brief.png)
+
