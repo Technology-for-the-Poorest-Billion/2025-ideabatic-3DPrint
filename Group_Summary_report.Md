@@ -31,17 +31,42 @@ Each team member spent some time becoming familiar with GIT, and this proved ver
 
 # Technical overview
 The technical overview is broken up into three sections
-* Design brief and context 
+* Background
 * Technical summary
 * Next steps and recommendations
 
-## Design brief and context
-Ideabatic has developed the SMILE icebox for transporting vaccines to remote locations show below in the image
-![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Smile%20icebox.png) 
+## Background
+Ideabatic has developed the SMILE icebox for transporting vaccines to remote locations shown below in the image
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Smile%20icebox.png)
 
 This icebox provides significant usability and performance benefits over existing iceboxes, with a vaccine cool life of over 4 days whereas conventional vaccine iceboxes through a combination of poor usage and design. However currently these iceboxes are CNC machined, which is very costly and not scalable.
 
-As such the following design brief was given to help Ideabatic further develop the SMILE icebox
+### Design brief
+As such the following design brief was given to help Ideabatic further develop the SMILE icebox. With the four areas highlighted specifically mentioned in the technical summary. 
 
 ![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Design%20brief.png)
 
+In addition to these design considerations, after discussions with Kitty at Ideabatic, drone transportation of the SMILE icebox was also identified as a major opportunity, so lightweighting and downsizing the icebox is a priority.
+
+### 3D printer constraints
+
+
+
+## Technical summary
+The technical summary focuses on the four areas highlighted in the design brief. The goal of low cost manufacture of the SMILE icebox was found to be completely feasible with significant process towards this aim made in the 4 weeks. 
+### 1: Manufactured protoypes
+Surpassing the design brief requirements to explore low cost manufacturing of the icebox hex case and carousel, two full function prototypes of the SMILE icebox were developed.
+
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Placeholder%20image.png) 
+
+These prototypes are built off a general concept [link to initial concepts] of a thin 3d printed shell stiffened and insulated with expanding foam. Unlike the current SMILE design, it is based on a 1L icepack bottle and only has 10 vaccine compartments as opposed to 19. Despite this the later prototype has preserved all of the features present in the large scale SMILE, featuring a self closing door, a vaccine carousel and various sealing and gasket features albeit designed with a focus on manufacture via 3D printing. 
+
+With a rough estimated cost of 
+
+### 2: Engineering lessons
+
+
+### 3: Quality control
+
+
+### 4: Thermodynamics
