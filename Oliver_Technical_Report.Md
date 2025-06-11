@@ -40,6 +40,7 @@ With our initial prototype built, we wanted to compare the thermal performance o
 Our initially prototype had a mistake, with the ice container being too small for the 1 litre bottle we were using. We resorted to using crushed up ice, placing this directly in the slot for the bottle. Whilst there were no explicit gaps, this was not water tight and led to all water draining as the ice melted. Being short on time and needing to complete further tests, I decided to continue this test and see if the ice box would still exhibit good performance. The vaccines were held at suitable temperature for 27 hours and 23 minutes, despite the water draining from the cool section. Whilst this is still impressive, it is not the performance we were expecting. I believe the leak was responsible for a significant drop in performance from the simulated 88 hour cool life, with conduction to the vaccine chamber being decreased. After the test, a significant amount of ice was still present. 
 
 Going forward, it is important this test is repeated to better validate our thermal model. The code used for my temperature sensor can be found in the GIT hub repositry to allow the temperature monitor to be quickly rebuilt. 
+
 ## Drop Test
 
 Experimental setup
