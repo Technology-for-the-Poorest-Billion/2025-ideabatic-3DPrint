@@ -140,7 +140,7 @@ A similar process is done for the inner lap joint, where the shell is offset and
 
 The exact same process is used to make the lap joints for the upper shell so the four constitutent componenents can be combined together. The only differnece is that the central round feature is held together using the reinforcing plate
 
-## Step 5: Rivet backing platees
+## Step 5: Rivet backing plates
 The final step is extruding out the rivet backing plates which will be laser cut from MDF. The point of these plates is to spread the load as the rivet clinches down on the part preventing cracking. This is particularly an issue due to the anistropy of 3d prints, as they will tend to crack along their layer lines. 
 
 ![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Prototype%20V1%20rivet%20backing%20plates.png))
