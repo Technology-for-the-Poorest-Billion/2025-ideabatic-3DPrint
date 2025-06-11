@@ -13,6 +13,13 @@ These vaccines are typically driven to a location as a close to the final locati
 
 With an idea of the kind of solution that could be made and the size of drone that would be used, we began researching possible drones that could be used to inform our decisions on the design of the cooler. Immediately we were lead to ISS aerospace, and their Sensus M aircraft. The specs are as follows: 
 
+> Max Flight time (No Payload): 45 minutes
+
+> Max Flight time (5kg Payload): 25 minutes
+
+> Range: 67.5km
+
+
 
 
 General principles, why they have become cheap. 
