@@ -39,11 +39,15 @@ With our initial prototype built, we wanted to compare the thermal performance o
 
 Our initially prototype had a mistake, with the ice container being too small for the 1 litre bottle we were using. We resorted to using crushed up ice, placing this directly in the slot for the bottle. Whilst there were no explicit gaps, this was not water tight and led to all water draining as the ice melted. Being short on time and needing to complete further tests, I decided to continue this test and see if the ice box would still exhibit good performance. The vaccines were held at suitable temperature for 27 hours and 23 minutes, despite the water draining from the cool section. Whilst this is still impressive, it is not the performance we were expecting. I believe the leak was responsible for a significant drop in performance from the simulated 88 hour cool life, with conduction to the vaccine chamber being decreased. After the test, a significant amount of ice was still present. 
 
-Going forward, it is important this test is repeated to better validate our thermal model. The code used for my temperature sensor can be found in the GIT hub repositry to allow the temperature monitor to be quickly rebuilt. 
+Going forward, it is important this test is repeated to better validate our thermal model. The code used for my temperature sensor can be found in the GIT hub repositry (https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Temperature_sensor.cpp) to allow the temperature monitor to be quickly rebuilt. 
 
-## Drop Test
+## Drop Test and Cool box protection.
 
-Experimental setup
+With smile being deployed to remote, rugged locations, we wanted to understand any weaknesses in the design of our initial prototype. Formed mainly of 3D prints filled with foam, we expected the exterior to be susceptible to cracks. To test this, we found a hard concrete cloor and dropped the cooler from a measured height of 1m. See the results of the initial drop below:
+
+We were impressed with the results of this test, with the damage being localised to one panel and the coolbox still working as intended. We believe having the prints being rivited together limits crack propagation, as well as the foam interior absorbing most of the impact. To better understand the performance, we increased the height we dropped from, dropping from 1m, 2m and 3m on both grass and concrete. The final state of the coolbox can be seen:
+
+Overall, we were very impressed with how the coolbox performed. At the end of this "destruction" testing, the coolbox still operated as intended, with all features working and the foam interior in tact. There was significant aesthatic damage to the 3D prints, something we wanted to mitiage with our final design. 
 
 results 
 
