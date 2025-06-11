@@ -56,7 +56,7 @@ Note that instead of fillets, chamfers are used, this is to enable printability,
 Additional features are then added to this solid shell body, first including the icepack door. This part is hollow to be filled with foam, with a small hole at the top to allow for this. It seals against the main shell using taper feature with attention paid for printability. A high pitch multi start thread is used so the door can screw on easily, as well as a thread tolerance. 
 
 
-![image](INSERT)
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Prototype%20V1%20Icepack%20door.png)
 
 The cutout for the door to make the vaccines is made, with the geometery designed as such so the door separates cleanly from the body. The door in indented into the body to avoid danamge, and the tapered entry to to help with both sealing and printability. This is mainly created using a boolean feature, to cut out the correct size opening, shelled to allow the door to be filled with expanding foam.
 
@@ -118,31 +118,31 @@ Unlike the previous smile design, where each shell half could be made in one pie
 
 Here we are using the lap joint and rivet strategy decided on in [joining 3d prints](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Joining%203D%20prints%20-%20Iain.md).
 
-![image](INSERT IMAGE)
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Prototype%20V1%20splitting%20shells%20into%204.png)
 
 Firstly by the center round section flanges are added by the split planes to help locate and seal these center sections. The part is then split into 4. The locations of the splits are designed to be on the flat faces of the hexagon, as this makes the lap joint more simple to design, as well as trying to maintain features like the vaccine door in once piece. 
 
 ### Lower shell lap joints
-![image](INSERT IMAGE)
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Prototype%20V1%20lower%20shell%20lap.png)
 
 The laps for the lower shell are then created by offsetting the shell features and then extruding it in the direction of the shell face. This is then mirrored across.
 
-![image](INSERT IMAGE)
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Prototype%20V1%20lower%20lap%20holes.png)
 
 Holes are then made for the rivets in the lap joints, 4 holes on each side, with another hole at the bottom.
 
-![image](INSERT IMAGE)
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Prototype%20V2%20lower%20shell%20inner%20lap.png)
 A similar process is done for the inner lap joint, where the shell is offset and then revolved to form an overlap which we can rivet through to connect the four sections. Note that we cannot rivet the conical sections as this is a bearing surface for the carousel, so any rivets would disturb rotation
 
 ### Upper shell lap joints
 
-![image](INSERT IMAGE)
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Prototype%20V1%20upper%20shell%20lap.png)
 
 The exact same process is used to make the lap joints for the upper shell so the four constitutent componenents can be combined together. The only differnece is that the central round feature is held together using the reinforcing plate
 
 ## Step 5: Rivet backing platees
 The final step is extruding out the rivet backing plates which will be laser cut from MDF. The point of these plates is to spread the load as the rivet clinches down on the part preventing cracking. This is particularly an issue due to the anistropy of 3d prints, as they will tend to crack along their layer lines. 
 
-![image](INSERT IMAGE)
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Prototype%20V1%20rivet%20backing%20plates.png))
 
 
