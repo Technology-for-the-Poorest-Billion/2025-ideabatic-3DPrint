@@ -11,7 +11,10 @@ Having experience developing a large drone for offshore windturbing inspections,
 
 These vaccines are typically driven to a location as a close to the final location as possible, before being hiked for several hours to their final destination.  As such, I saw the opportunity to use a drone that was small enough to fit in the bed of a truck, but large enough to carry a significant payload with good range. Kitty felt that the current solution carrying 500 doses was excessive, relaxing the constraint on the number of vaccines that needed to be carried. There are several things to note here: Driving the majority of the journey massively relaxes the range requirement of the drone, and the nature of delivery with drones meant that multiple vaccine deliveries could be easily made at little marginal cost, meaning the number of vaccines taken by the drone could be reduced.
 
-With an idea of the kind of solution that could be made and the size of drone that would be used, we began researching possible drones that could be used to inform our decisions on the design of the cooler. Immediately we were lead to ISS aerospace, and their Sensus M aircraft. With a range of 
+With an idea of the kind of solution that could be made and the size of drone that would be used, we began researching possible drones that could be used to inform our decisions on the design of the cooler. Immediately we were lead to ISS aerospace, and their Sensus M aircraft. The specs are as follows: 
+
+
+
 General principles, why they have become cheap. 
 
 ISS aerospace interview summary. 
