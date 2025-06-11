@@ -21,7 +21,7 @@ With an idea of the kind of solution that could be made and the size of drone th
 
 From this information alone, we were able to make an informed decision of a rough weight of the payload, aiming to keep it below 2.5kg and have a flight time above 30 minutes, and range of 30km (round trip). With ISS aerospace based in the UK, they seemed like a good option to aid in the development of the payload. 
 
-After getting in touch, they kindly arranged for us to meet with one of their engineers to further discuss the project. The interview was filled with great information and advice, and has been documented in the wiki:
+After getting in touch, they kindly arranged for us to meet with one of their engineers to further discuss the project. The interview was filled with great information and advice, and has been documented in the wiki: https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/wiki/Drone-Sizing-,-constraints-and-regulation
 
 
 General principles, why they have become cheap. 
