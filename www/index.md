@@ -1,3 +1,6 @@
+Technical Report on Drone Performance and Testing: [Here](Oliver_Technical_Report.html)
+
+
 # Project Strategy
 
 This project brought together many considerations concerning thermal performance and the use of 3D printing for manufacture, all underpinned by the payload requirements of a selected drone. These factors are closely intertwinned and the project ambitious; this called for effective communication, collaboration and pervasive planning to achieve the outcome we desired. Throughout, we communicated our main ideas and design decisions to Kitty at Ideabatic, to ensure our work culminated in what Ideabatic needed.
