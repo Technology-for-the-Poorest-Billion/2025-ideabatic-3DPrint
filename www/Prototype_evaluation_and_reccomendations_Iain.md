@@ -114,3 +114,10 @@ Changed the carousel design to get rid of the taper at the top as the bottom of 
 The twist handles for the carousel cap and icepack door was changed to these thumb indents. This is to leave more room for foam inside the parts. Although this works, it is unintuitive so a twist handle design should be adopted  
 
 
+## Modified carousel cap design
+Modified the carousel cap design, so it threads in and can lock into 10 different rotational positions. (only 10 positions as we need to make sure the numbers always line up with a vaccine compartment) This means the cone spacing can be changed, with tighter meaning a better seal and a less wobbly carousel, and looser meaning the carousel is easier to turn. This worked brilliantly. In addition to this numbers were added to correspond to the vaccine positions
+
+## Added gasket material between the two halves
+Added gaskets material to between the two halves, this is probably necessary in the final production to ensure a weather resistance. One concern is a thermal shortcut through the reinforcement plate, probably should use a wide spanning foam gasket to avoid this. 
+
+
