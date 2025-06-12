@@ -41,13 +41,13 @@ The technical summary focuses on the four areas highlighted in the design brief.
 ### 1: Manufactured protoypes
 Two full function prototypes of the SMILE icebox were developed.
 
-![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Icebox%20comparison.png) 
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Images/Icebox%20comparison.png) 
 
 These prototypes are built off a general concept [initial concept](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Design%20review%20and%20initial%20concept%20-%20Iain.md) of a thin 3d printed shell stiffened and insulated with expanding foam. Unlike the current SMILE design, it is based on a 1L icepack bottle and only has 10 vaccine compartments as opposed to 19. Despite this the later prototype has preserved all of the features present in the large scale SMILE, including a self closing door and carousel. 
 
 In addition the new prototype is significantly lighter weighing just 1.6kg versus 4.5kg for the original design and features mounting for drone transport . 
 
-With an estimated material cost of [£65](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Bill%20of%20materials.md) for the prototype we have fully demonstrated the feasiblity of low cost manufacturing and these prototypes can act as a spring broad for future in service designs. 
+With an estimated material cost of [£65](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Bill%20of%20materials.md) for the prototype we have fully demonstrated the feasiblity of low cost manufacturing and these prototypes can act as a spring broad for future in service designs. 
 
 ### 2: Engineering lessons
 Alongside the finished prototypes, one of the most useful lessons learnt from this project are the engineering lessons learnt throughout the project. 
