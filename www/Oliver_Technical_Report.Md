@@ -1,5 +1,5 @@
-# Oliver Griffiths Technical Report
-Author: Oliver Griffiths
+# Technical Report on Drone selection, Regulation and Testing
+
 This project has considered a range of technical areas. This report gives a brief overview of some of these aspects, looking at the key considerations made when selecting a suitable drone and the thermal and destruction testing of our initial prototype. The work will be summarised, and the key takeaways presented, serving as a basis for further development of this project. 
 
 Where appropriate, links will be provided to other pages containing more detail. 
@@ -50,9 +50,9 @@ We were impressed with the results of this test, with the damage being localised
 
 ![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/IMG_7440.jpeg?raw=true)
 
-Overall, we were very impressed with how the coolbox performed. At the end of this "destruction" testing, the coolbox still operated as intended, with all features working and the foam interior in tact. There was significant aesthatic damage to the 3D prints, something we wanted to mitiage with our next prototype. With most of the damage beign concentrated on the corners, I designed up some TPU bumpers (TPU is a flexible plastic that can be 3D pritned) that would rivet from the inside and be secured to each corner, as well as including the mountaing point for a strap; see the CAD preview below:
+Overall, we were very impressed with how the coolbox performed. At the end of this "destruction" testing, the coolbox still operated as intended, with all features working and the foam interior in tact. There was significant aesthatic damage to the 3D prints, something we wanted to mitiage with our next prototype. With most of the damage beign concentrated on the corners, I designed up some TPU bumpers (TPU is a flexible plastic that can be 3D pritned) that would rivet from the inside and be secured to each corner, as well as including the mountaing point for a strap; see the finished results below:
 
-![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/IMG_7432.jpeg?raw=true)
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/IMG_7464.jpeg?raw=true
 
 Initially, with an infill of 15%, these parts were stiff and did not seem appropriate. Reducing the infill to 5% and using a honeycomb infill pattern rsulted in significantly more compliant bumpers that easily deform when the coolbox is dropped onto a cooler. These parts have not been extensively tested, and weigh a significant amount. Further field testing should be performed to further optimise the design of these bumpers and check their performance. 
 
