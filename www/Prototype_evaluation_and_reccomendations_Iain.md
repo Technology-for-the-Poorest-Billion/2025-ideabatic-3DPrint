@@ -120,4 +120,5 @@ Modified the carousel cap design, so it threads in and can lock into 10 differen
 ## Added gasket material between the two halves
 Added gaskets material to between the two halves, this is probably necessary in the final production to ensure a weather resistance. One concern is a thermal shortcut through the reinforcement plate, probably should use a wide spanning foam gasket to avoid this. 
 
-
+## Added TPU bumpers in the corners
+This was mostly Olivers work but TPU bumpers were added to the new icebox to help guard against a drop after the results of the drop test. In addition two rods are positioned for mounting to a drone. These bumpers seem to work very well, but may be overly thick as they will prevent tessellation of the icebox design. 
