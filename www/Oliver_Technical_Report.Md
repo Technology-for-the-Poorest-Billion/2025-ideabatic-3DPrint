@@ -44,12 +44,15 @@ Going forward, it is important this test is repeated to better validate our ther
 ## Drop Test and Cool box protection.
 
 With smile being deployed to remote, rugged locations, we wanted to understand any weaknesses in the design of our initial prototype. Formed mainly of 3D prints filled with foam, we expected the exterior to be susceptible to cracks. To test this, we found a hard concrete cloor and dropped the cooler from a measured height of 1m. See the results of the initial drop below:
-![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/IMG_7425.jpeg?raw=true)
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/IMG_7432.jpeg?raw=true)
 
 We were impressed with the results of this test, with the damage being localised to one panel and the coolbox still working as intended. We believe having the prints being rivited together limits crack propagation, as well as the foam interior absorbing most of the impact. To better understand the performance, we increased the height we dropped from, dropping from 1m, 2m and 3m on both grass and concrete. The final state of the coolbox can be seen:
 
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/IMG_7432.jpeg?raw=true)
+
 Overall, we were very impressed with how the coolbox performed. At the end of this "destruction" testing, the coolbox still operated as intended, with all features working and the foam interior in tact. There was significant aesthatic damage to the 3D prints, something we wanted to mitiage with our next prototype. With most of the damage beign concentrated on the corners, I designed up some TPU bumpers (TPU is a flexible plastic that can be 3D pritned) that would rivet from the inside and be secured to each corner. See the CAD preview below:
 
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/IMG_7432.jpeg?raw=true)
 
 Initially, with an infill of 15%, these parts were stiff and did not seem appropriate. Reducing the infill to 5% and using a honeycomb infill pattern rsulted in significantly more compliant bumpers that easily deform when the coolbox is dropped onto a cooler. These parts have not been extensively tested, and weigh a significant amount. Further field testing should be performed to further optimise the design of these bumpers and check their performance. 
 
