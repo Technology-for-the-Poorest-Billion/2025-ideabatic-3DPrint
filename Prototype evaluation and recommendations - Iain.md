@@ -22,8 +22,14 @@ In addition the rivets are very easy to inspect, very quick to install and can b
 ### Reinforcing plate:
 The reinforcement plate which is riveted on between the outer shell and the inner cylinderical part of the icebox shell does an excellent job of stiffening the part as well as ensuring the part remains the correct shape. Having this part as a seperate piece helps overcome issues with overhangs, while the laser cut manufacturing method allows this plate to span over multiple 3d printed parts ensuring they are all aligned accurately. 
 
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/V1%20reinforcing%20plate.png) 
 
+
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Prototype%20V1%20reinforcing%20plate.png) 
 
 ### Carousel design:
 The carousel design works very well with the two halves threaded on to each other. It spins freely within the part but can be disassembled easily while providing somewhat of a seal.
+
+### Vaccine door design:
+The vaccine door works moderately well as a proof of concept, does not close properly though. 
 
