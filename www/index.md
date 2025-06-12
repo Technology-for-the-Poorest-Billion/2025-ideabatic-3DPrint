@@ -7,9 +7,9 @@ Technical Report on Thermal Analysis and Simulation: [Here](Hussain_Technical_Re
 
 Technical documentation on mechanical design and CAD:
 * [Design review and initial concept](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Design%20review%20and%20initial%20concept%20-%20Iain.html)
-* [Prototype V1 Cad and design](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Prototype%20V1%20CAD%20and%20design%20-%20Iain.html)
-* [Prototype evaluation and recommendation](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Prototype%20evaluation%20and%20recommendations%20-%20Iain.html)
-* [Bill of materials](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Bill%20of%20materials%20-%20Iain.md)
+* [Prototype V1 Cad and design](Prototype_V1_CAD_and_design_Iain.html)
+* [Prototype evaluation and recommendation](Prototype_evaluation_and_reccomendations_Iain.html)
+* [Bill of materials](Bill_of_materials_Iain.html)
 
 [Icebox V1 Cad on onshape](https://cad.onshape.com/documents/73ee3694d82d5930b59690d2/w/6676daabe459417f310d4151/e/e961ad116b7d00652cd5d247)
 
