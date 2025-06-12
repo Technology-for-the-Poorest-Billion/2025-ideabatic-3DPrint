@@ -1,40 +1,36 @@
-
 Individual Report: Thermal Performance Modelling and Optimisation
 Author: [Hussain Ahmed Khan]
 
 1. Introduction: Addressing the Cold Chain Challenge
-The overarching challenge addressed by our "Technology for the Poorest Billion" project is the critical need for reliable and effective cold chain solutions in environments with limited infrastructure. Specifically, the cooler design, dubbed the "Smile," aims not only to keep vaccines cool but also to ensure their safe transport over long distances and arduous journeys.
+The "Technology for the Poorest Billion" project addresses the need for reliable cold chain solutions where infrastructure is limited. The "Smile" cooler aims to keep vaccines cool and ensure their safe transport over long, difficult journeys.
 
-A significant problem with previous approaches or existing models often lies in aspects of human error, such as the frequent opening of vaccine containers at various locations, leading to exposure to ambient air. This exposure causes rapid heating and a loss of vaccine potency, rendering them ineffective. The Smile cooler design incorporates an internal carousel mechanism. This carousel allows the vaccine container to be rotated without fully opening the main cooler, thereby preventing vaccine bottles from getting mixed up and, more importantly, drastically reducing exposure to external temperatures.
+Previous designs failed due to human error, such as frequent lid opening, causing vaccine exposure and potency loss. The Smile cooler includes an internal carousel. This allows vaccine access without fully opening the main cooler, reducing heat exposure.
 
-The critical temperature range for the vaccines is between 2 
-∘
- C and 8 
-∘
- C. Any deviation below or above this range can lead to the degradation or "death" of the vaccines, making precise temperature maintenance paramount.
+Vaccines require 2∘C − 8∘C. Deviations outside this range degrade vaccines, so precise temperature control is critical.
 
-This cooler is specifically targeted for use in Sub-Saharan Africa. While the precise climatic conditions vary across the region, I understand that it generally involves high ambient temperatures and potentially high humidity. The journeys are often physically demanding, involving travel across challenging terrains such as rivers and mountains, long walks on dangerous roads, and transport on the backs of trucks. These conditions can cause significant vibration. To counteract this, the carousel inside the Smile cooler is tipped with rubber, effectively absorbing shocks and energy, thus preventing damage to the vaccine bottles.
+The cooler targets Sub-Saharan Africa. This region typically has high ambient temperatures and humidity. Journeys are demanding, involving rough terrain and significant vibration. The carousel is rubber-tipped to absorb shocks, protecting vaccine bottles.
 
-My specific contribution to this project has been the development and refinement of a thermal simulation model. This model is a crucial tool for predicting the cooler's thermal performance and optimising its insulation design to meet the rigorous demands of vaccine transportation and storage in these challenging, off-grid environments. This report will detail the technical aspects of the thermal model, its capabilities, how it informs design decisions, and avenues for future development.
+My contribution focused on developing and refining a thermal simulation model. This model predicts cooler performance and optimises insulation for challenging, off-grid vaccine transport. This report details the model's technical aspects, capabilities, design influence, and future development.
 
 2. Technical Presentation of the Solution (Handover Notes for Partner: Ideabatic)
-The thermal model is designed to simulate heat transfer through a multi-layered cylindrical cooler. Its primary purpose is to accurately predict the rate of heat ingress (heat loss from the environment into the cooler) and, consequently, the duration for which a given mass of ice can maintain the cooler's internal temperature at approximately 0 
+The thermal model simulates heat transfer through a multi-layered cylindrical cooler. Its main purpose is to predict heat ingress and the duration ice maintains the cooler's internal temperature at approximately 0 
 ∘
- C (the ice melt temperature). This capability enables rapid virtual prototyping, reduces the need for expensive and time-consuming physical prototypes, allows for performance prediction under various environmental conditions, and aids in informed material and dimension selection, which are all critical for efficient development.
+ C. This enables rapid virtual prototyping, reduces expensive physical tests, allows performance prediction, and aids material/dimension selection.
 
-The model primarily considers two fundamental modes of heat transfer:
+The model considers two fundamental heat transfer modes:
 
-Conduction: Heat transfer through solid insulation layers, calculated using thermal conductivity.
+Conduction: Heat transfer through solid insulation layers.
 
 Natural Convection: Heat transfer across the internal air gap and from the external surface to the ambient air.
 
-The analysis employs the Ohm's Law Analogy for heat transfer, where heat flow (Q 
+The analysis uses the Ohm's Law Analogy for heat transfer, where heat flow (Q 
 dot
 ​
  ) is proportional to the temperature difference (ΔT) divided by the total thermal resistance (R 
 th
 ​
- ). This is expressed as:
+ ):
+
 
 Q 
 dot
@@ -50,8 +46,14 @@ th
 Model Components and Calculations:
 
 Radial Heat Transfer (Cylindrical Sides):
+The model calculates heat flow through the side walls using the R 
+th 
+r
+​
+ adial
+​
+  function. This applies the standard formula for cylindrical shell thermal resistance:
 
-The model accounts for heat flow through the side walls of the cooler using the Rth_radial function. This function applies the standard formula for thermal resistance of a cylindrical shell:
 
 R 
 th,radial
@@ -67,35 +69,41 @@ ln(r
  )
 ​
  
+
 where r 
 1
 ​
   is the inner radius, r 
 2
 ​
-  is the outer radius, L is the length, and k is the thermal conductivity of the material.
+  is the outer radius, L is the length, and k is the thermal conductivity.
 
-The layers included radially are:
+Radial layers include:
 
-Inner Insulation Layer: Located immediately outside the ice container. Its thermal conductivity (k 
+Inner Insulation Layer: Outside the ice container. Thermal conductivity (k 
 insulation, inner
 ​
- ) was set to 0.03 W/mK.
+ ) set to 0.03 W/mK.
 
-Air Gap: Modelled as a convective resistance. The natural convection coefficient (h_{\text{air_gap}}) for this gap was set to 3.0 W/m 
+Air Gap: Modelled as convective resistance. Natural convection coefficient (h_{\text{air_gap}}) set to 3.0 W/m 
 2
  K.
 
-Outer Foam Layer: The outermost insulation layer. Its thermal conductivity (k 
+Outer Foam Layer: Outermost insulation. Thermal conductivity (k 
 foam, outer
 ​
- ) was set to 0.03 W/mK.
-
-External convection from the cooler's outer surface to the ambient air is also included, using an empirical relationship based on external air speed (as referenced in the code comments).
+ ) set to 0.03 W/mK.
+External convection from the cooler's outer surface to ambient air is also included, using an empirical relationship based on external air speed.
 
 Planar Heat Transfer (Top and Bottom):
+Heat flow through the flat top and bottom surfaces is calculated using the R 
+th 
+l
+​
+ inear
+​
+  function. This applies the standard formula for flat slab thermal resistance:
 
-Heat flow through the flat top and bottom surfaces is calculated using the Rth_linear function. This function applies the standard formula for thermal resistance through a flat slab:
 
 R 
 th,linear
@@ -105,25 +113,26 @@ A⋅k
 t
 ​
  
-where t is the thickness, A is the area, and k is the thermal conductivity of the material.
 
-The layers included linearly (for both top and bottom) are:
+where t is the thickness, A is the area, and k is the thermal conductivity.
 
-Flat Inner Insulation: This layer has the same thermal conductivity as the radial inner insulation (k_{\text{flat, insulation, top_bottom}}) was set to 0.03 W/mK.
+Linear layers (top and bottom) include:
 
-Flat Outer Foam: This layer has the same thermal conductivity as the radial outer foam (k_{\text{flat, foam, top_bottom}}) was set to 0.03 W/mK.
+Flat Inner Insulation: Same thermal conductivity as radial inner insulation (k_{\text{flat, insulation, top_bottom}}) set to 0.03 W/mK.
 
-Phase Change Calculation: The total heat ingress calculated from both radial and planar heat transfer is used to determine how long the ice will last. By dividing the total energy required to melt the ice (mass of ice multiplied by its specific latent heat of fusion) by the total rate of heat ingress, the model estimates the time until all the ice melts.
+Flat Outer Foam: Same thermal conductivity as radial outer foam (k_{\text{flat, foam, top_bottom}}) set to 0.03 W/mK.
 
-Boundary Temperature Calculations: The model also predicts temperatures at the interfaces between different insulation layers. This is crucial for vaccine safety, particularly to ensure that the temperature at the vaccine container interface remains within the 2 
+Phase Change Calculation: Total heat ingress determines ice duration. The model estimates time until all ice melts by dividing the energy to melt ice (ice mass × specific latent heat) by the total heat ingress rate.
+
+Boundary Temperature Calculations: The model predicts temperatures at insulation layer interfaces. This is vital for vaccine safety, ensuring the vaccine container interface stays within the 2 
 ∘
  C−8 
 ∘
- C range, preventing freezing whilst optimising cooling duration.
+ C range, preventing freezing while optimising cooling duration.
 
 Baseline Model Parameters:
 
-Our initial "baseline" cooler design, from which subsequent iterations stemmed, had the following characteristics:
+Initial "baseline" cooler design characteristics:
 
 Mass of ice (m 
 ice
@@ -140,116 +149,126 @@ ice
 ​
  ): 0.08 m
 
-Thickness of the inner insulation (t 
+Thickness of inner insulation (t 
 insulation, inner
 ​
  ): 0.005 m
 
-Thickness of the air gap (t_{\text{air_gap}}): 0.04 m
+Thickness of air gap (t_{\text{air_gap}}): 0.04 m
 
-Thickness of the outer foam (t 
+Thickness of outer foam (t 
 foam, outer
 ​
  ): 0.08 m
 
-Thickness for the flat inner insulation (t_{\text{flat, insulation, top_bottom}}): 0.005 m (Assumed to be the same as radial inner insulation thickness).
+Thickness for flat inner insulation (t_{\text{flat, insulation, top_bottom}}): 0.005 m
 
-Thickness for the flat outer foam (t_{\text{flat, foam, top_bottom}}): 0.05 m.
+Thickness for flat outer foam (t_{\text{flat, foam, top_bottom}}): 0.05 m.
 
 Specific Latent Heat of Fusion for ice (SLH 
 ice
 ​
- ): 334000 J/kg (standard value)
+ ): 334000 J/kg
 
 Environment Temperature (T 
 environment
 ​
  ): 30 
 ∘
- C (standard test condition)
+ C (test condition)
 
 Ice Temperature (T 
 ice, temp
 ​
  ): 0 
 ∘
- C (assumed constant for melting ice)
+ C (constant for melting ice)
 
 External Air Speed (v 
 external, air
 ​
- ): 1.0 m/s (standard test condition)
+ ): 1.0 m/s (test condition)
 
 Key Assumptions and Simplifications:
 
-Steady-State Heat Transfer: The model assumes constant temperatures over time, focusing on the equilibrium heat flow into the cooler.
+Steady-State Heat Transfer: Model assumes constant temperatures.
 
-Ignoring Radiation: Heat transfer by radiation between surfaces or to the environment is not explicitly included in this iteration of the model.
+Ignoring Radiation: Radiation heat transfer not explicitly included.
 
-Ignoring Plastic Conduction: The thermal contribution of the plastic casing materials is considered negligible compared to the insulation layers.
+Ignoring Plastic Conduction: Plastic casing thermal contribution deemed negligible.
 
-Uniform Material Properties: Material thermal conductivities and convection coefficients are assumed to be constant within their respective layers.
+Uniform Material Properties: Thermal conductivities and convection coefficients assumed constant.
 
-Simplified Geometry for Flat Sections: The flat top and bottom areas are approximated using the inner ice container's cross-sectional area.
+Simplified Geometry for Flat Sections: Flat top and bottom areas approximated using inner ice container's cross-sectional area.
 
-Empirical Convection Correlations: The model relies on estimated or empirical convection coefficients, particularly for external airflow, which may have specific validity ranges.
+Empirical Convection Correlations: Model uses estimated or empirical convection coefficients.
 
 3. Description of Data/Code/Blueprints Available in the Repository
-The Python code for the thermal model is located within the team's GitHub repository at the following path:
+The Python code for the thermal model is on GitHub:
 https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/64eca1a5af41744abf37b80db37fa1698ad59f40/Hussain-Thermal-Model-Kitty.ipynb
 
-The code is written in Python and primarily utilises the numpy library for numerical operations, such as logarithmic calculations. Whilst matplotlib is imported, it is currently reserved for potential future visualisation within the notebook itself, not for calculations.
+The code uses Python, mainly numpy for calculations. matplotlib is imported for potential future visualisation.
 
-The core logic of the model is encapsulated within the calculate_cooler_performance function. This function takes a comprehensive set of design and environmental parameters as input, enabling flexible simulation of various cooler configurations. Its output is a dictionary providing key performance metrics, including the total_heat_loss_W, cooling_duration_hours, the total_outer_diameter_cm (which is a critical design dimension), and crucial boundary temperatures (temp_at_insulation_edge_degC, temp_at_air_edge_degC) for safety analysis.
+The model's core logic is in the calculate_cooler_performance function. This function takes design and environmental parameters for simulations. Output includes:
 
-An example of how to invoke the function and interpret its results is provided in the if __name__ == "__main__": block within the Jupyter notebook itself. This allows for straightforward testing and verification of design changes.
+total_heat_loss_W
+
+cooling_duration_hours
+
+total_outer_diameter_cm
+
+temp_at_insulation_edge_degC
+
+temp_at_air_edge_degC (boundary temperatures for safety analysis).
+
+An example of function use is in the if __name__ == "__main__": block of the Jupyter notebook. This aids testing and design verification.
 
 4. Design Background and Iteration
-Our initial baseline cooler design (as described in Section 2) was developed to provide a substantial vaccine capacity. However, a significant shift in design strategy occurred, driven by the project's evolving needs, particularly the aspiration for drone delivery. This necessitated a drastic reduction in size and weight.
+The initial baseline cooler aimed for high vaccine capacity. However, project needs, particularly drone delivery, required significant size and weight reduction.
 
-The main characteristics that were changed were the overall size and shape of the cooler. This had direct effects on the dimensions of the insulation thicknesses, as well as the radius and length of the ice container itself. These changes, in turn, profoundly affected the cooler's thermal performance – specifically, how long the vaccines would remain cool and how long the ice would take to melt.
+The cooler's overall size and shape changed, impacting insulation thicknesses, ice container radius, and length. These changes affected thermal performance.
 
-A key decision in this iteration was to fix the size of the ice bottle (the inner core of the cooler) and build all subsequent insulation and casing layers around it, rather than designing the outer shell first. This strategic decision led to a smaller cooler overall, which, as a trade-off, resulted in the ice lasting for less time and the total number of vaccine doses transportable being reduced from approximately 540 doses to roughly 270 doses.
+A key decision was to fix the ice bottle size, building layers around it. This led to a smaller cooler. As a trade-off, ice duration reduced, and transportable vaccine doses decreased from approximately 540 to 270.
 
-Therefore, for the shrunk design, the ice bottle's length and radius became fixed parameters:
+For the shrunk design, fixed ice bottle parameters were:
 
-New Length of cylindrical container (L 
+Length (L 
 container
 ​
  ): 0.155 m
 
-New Radius of inner ice container (r 
+Radius (r 
 ice
 ​
  ): 0.045 m
 
-New Mass of ice (m 
+Mass (m 
 ice
 ​
- ): 1 kg (this is consistent with the shrunk size).
+ ): 1 kg
 
-With these new fixed inner dimensions, the objective for this smaller shape was to maximise the cooling time so that vaccines could be kept cold for delivery via drones. This required iterating on everything else around this fixed inner core. The parameters varied during optimisation included the thicknesses of the insulation layers:
+The objective for this smaller shape was to maximise cooling time for drone delivery. This involved iterating on insulation layer thicknesses:
 
 t 
 insulation, inner
 ​
-  (thickness of inner insulation)
+  (inner insulation)
 
-t_{\text{air_gap}} (thickness of air gap)
+t_{\text{air_gap}} (air gap)
 
 t 
 foam, outer
 ​
-  (thickness of outer foam)
+  (outer foam)
 
-t_{\text{flat, insulation, top_bottom}} (thickness of flat inner insulation)
+t_{\text{flat, insulation, top_bottom}} (flat inner insulation)
 
-t_{\text{flat, foam, top_bottom}} (thickness of flat outer foam)
+t_{\text{flat, foam, top_bottom}} (flat outer foam)
 
-The thermal conductivities (k values) of the materials and the convection coefficients (h values) were kept constant during this optimisation phase, focusing on optimising the physical dimensions of the insulation layers.
+Material thermal conductivities (k values) and convection coefficients (h values) remained constant during optimisation, focusing on physical dimensions.
 
 5. Experimental Setup (for Virtual Simulations) and Results
-The calculate_cooler_performance function was utilised to perform a series of virtual experiments (simulations) to explore the design space around the fixed inner dimensions of the smaller cooler (L 
+The calculate_cooler_performance function ran simulations to explore the design space around the smaller cooler's fixed inner dimensions (L 
 container
 ​
  =0.155 m, r 
@@ -257,93 +276,63 @@ ice
 ​
  =0.045 m, 1 kg ice).
 
-The process involved systematically varying the insulation layer thicknesses and observing their impact on cooling duration and total heat loss. This allowed us to understand the trade-offs between insulation effectiveness and overall cooler size. Whilst specific increments for iteration were managed by other team members, the variations would have been within ranges achievable by 3D printing. Typical tolerances for FDM (Fused Deposition Modelling) 3D printing, for example, can range from ±0.1 mm to ±0.5 mm depending on the printer, material, and geometry, which would have guided the practical step sizes for the thicknesses explored.
+Insulation layer thicknesses were systematically varied to observe their impact on cooling duration and total heat loss. This identified trade-offs between insulation effectiveness and cooler size. Iteration increments were managed by other team members, with variations within 3D printing capabilities (FDM tolerances typically ±0.1 mm to ±0.5 mm).
 
-A significant observation from these simulations was that the smaller size of the cooler, when optimised with appropriate insulation, achieved a solid cooling life much greater than what we initially require for drone delivery, which is a minimum of 24 hours. This indicates a robust thermal performance for the designed cooler.
+The optimised smaller cooler achieved a cooling life significantly greater than the 24-hour drone delivery minimum, indicating robust thermal performance.
 
 Diminishing Returns Analysis ("Python Profile"):
-To further understand the efficiency of adding insulation, a dedicated "python profile" analysis was conducted using a separate script. This analysis specifically allows for inputting any given ice container radius and length, and it will then identify the point where adding more insulation leads to diminishing returns in cooling performance. This is achieved by systematically varying an insulation thickness (in the provided profile, t 
+A 'python profile' analysis was conducted to understand insulation efficiency. This script takes ice container dimensions and identifies the point where adding more insulation yields diminishing returns in cooling performance. It systematically varies an insulation thickness (e.g., t 
 insulation
 ​
-  from 0.001 metres (1mm) to 0.1 metres (10cm)) and calculating the marginal gain in cooling time.
+  from 0.001 m to 0.1 m) and calculates marginal cooling time gain.
 
-The primary conclusion derived from this "python profile" is its utility as a future design tool. It allows subsequent teams or Ideabatic to quickly calculate the optimal insulation thickness required if they design coolers with different internal dimensions (e.g., to accommodate larger payloads for more advanced drones). It enables them to find the "sweet spot" where insulation is sufficient without incurring unnecessary material cost, weight, or outer dimensions for negligible thermal benefit. For instance, the profile would help determine that beyond a certain thickness of foam, the gain in cooling time becomes insignificant relative to the increase in cooler size and material cost, thus defining an optimal range for foam thickness.
+The 'python profile' is a future design tool. It allows teams or Ideabatic to quickly calculate optimal insulation thickness for coolers with different internal dimensions (e.g., for larger drone payloads). It helps identify the 'sweet spot' for insulation, avoiding unnecessary material cost, weight, or size for minimal thermal gain.
 
 Optimal Design Parameters and Performance:
-Based on the optimisation process, the "current design" (the optimal smaller shape) achieved the following performance:
+The optimised 'current design' achieved:
 
 Cooling Duration: 85 hours
 
 Total Outer Diameter: 31.8 cm
 
-To achieve this performance with the fixed inner dimensions (L 
-container
-​
- =0.155 m, r 
-ice
-​
- =0.045 m, m 
-ice
-​
- =1 kg), the final chosen insulation thicknesses were:
-
-t 
-insulation, inner
-​
- : 0.004 m (Based on code snapshot)
-
-t_{\text{air_gap}}: 0.03 m (Based on code snapshot)
-
-t 
-foam, outer
-​
- : 0.08 m (Derived from total diameter and other fixed dimensions)
-
-t_{\text{flat, insulation, top_bottom}}: 0.004 m (Assumed same as t 
-insulation, inner
-​
- )
-
-t_{\text{flat, foam, top_bottom}}: 0.05 m (Based on code snapshot for flat layers)
-
-This significantly exceeds the minimum 24-hour requirement, providing a substantial safety margin for drone delivery operations.
+The specific insulation thicknesses for this optimal design were determined by the optimisation process.
 
 6. Instructions on Manufacturing and Assembly (Informed by Model)
-Whilst the direct manufacturing and assembly processes for the physical cooler are primarily handled by the CAD group, my thermal modelling work provides the critical quantitative specifications that directly inform their design and production.
+Direct manufacturing and assembly are handled by the CAD group. My thermal modelling provides quantitative specifications that directly inform their design and production.
 
-The thermal model's output, particularly the identified "optimal" dimensions (such as the specific thicknesses for the inner insulation, air gap, and outer foam, along with the resulting overall cooler diameter), serve as the foundational "blueprints" for thermal performance. For instance, the model dictates:
+The thermal model's output, including identified 'optimal' dimensions (e.g., inner insulation, air gap, outer foam thicknesses, and overall cooler diameter), acts as a blueprint for thermal performance. The model dictates:
 
-The precise length (0.155 m) and radius (0.045 m) for the central ice bottle (which was fixed in our current iteration).
+Precise length (0.155 m) and radius (0.045 m) for the central ice bottle.
 
-The required thicknesses of each insulation layer (e.g., 0.004 m for inner insulation, 0.03 m for air gap, 0.08 m for outer foam) to achieve the target cooling duration.
+Required thicknesses for each insulation layer to achieve target cooling duration.
 
-The necessary thermal conductivity values (k) for the materials to be sourced (e.g., 0.03 W/mK for foam and inner insulation), ensuring they meet the thermal performance requirements.
+Necessary thermal conductivity values (k) for sourced materials (e.g., 0.03 W/mK for foam and inner insulation).
 
-Essentially, the model's role is to ensure that the physical dimensions and material choices made during CAD and manufacturing will result in the desired cold chain performance. As long as the components are produced to these specified dimensions (accounting for manufacturing tolerances, e.g., typical 3D printing tolerances of ±0.1 mm to ±0.5 mm) and use materials with the specified thermal properties, the cooler is predicted to perform as intended.
+The model ensures physical dimensions and material choices from CAD/manufacturing yield desired cold chain performance. Components produced to specified dimensions (within typical 3D printing tolerances, e.g., ±0.1 mm to ±0.5 mm) with specified thermal properties are predicted to perform as intended.
 
 7. Suggestions for Improvement (If more time)
 For Ideabatic (Immediate/Near-Term Improvements):
 
-Cost-Benefit Analysis Integration: Integrate a basic cost model into the simulation to allow for optimisation based on cooling_duration_hours per unit cost or per unit volume. This would provide Ideabatic with direct insights into the most economically viable designs.
+Cost-Benefit Analysis Integration: Integrate a basic cost model into the simulation to optimise based on cooling duration per unit cost or volume.
 
-Material Library Expansion: Develop a more comprehensive, externally accessible database of common insulation materials relevant to their supply chain, including their thermal conductivities, densities, and approximate costs. This would simplify material selection for future designs.
+Material Library Expansion: Develop a comprehensive, externally accessible database of common insulation materials (thermal conductivities, densities, approximate costs) relevant to Ideabatic's supply chain.
 
-User-Friendly Interface: Consider developing a simplified front-end (e.g., a simple web tool or a more interactive Jupyter dashboard) for the thermal model. This would enable non-technical users at Ideabatic to easily input design parameters and quickly evaluate performance without needing deep knowledge of the underlying code.
+User-Friendly Interface: Develop a simplified front-end (e.g., web tool or interactive Jupyter dashboard) for the thermal model.
 
 For Future Students (Longer-Term Research/Development):
 
-Radiation Heat Transfer: Incorporate a robust model for radiation heat transfer, particularly important for coolers exposed to direct sunlight or warm surfaces, as this can be a significant heat gain mechanism.
+Radiation Heat Transfer: Incorporate a robust model for radiation heat transfer, particularly for coolers exposed to direct sunlight or warm surfaces.
 
-Transient Thermal Analysis: Extend the current steady-state model to a transient analysis. This would allow for simulating the cooler's internal temperature profile over time as the ice melts, providing more granular data on how long specific vaccine temperature ranges are maintained, not just until all ice is gone.
+Transient Thermal Analysis: Extend the steady-state model to a transient analysis. This would simulate the cooler's internal temperature profile over time as ice melts, providing granular data on vaccine temperature ranges.
 
 Advanced Convection Modelling: Investigate and implement more sophisticated empirical correlations for natural and forced convection, especially for complex geometries or varying external air flow conditions.
 
-Multi-Objective Optimisation: Explore advanced optimisation algorithms (e.g., genetic algorithms or those available in scipy.optimize) to simultaneously optimise for multiple, often conflicting, objectives such as maximising cooling duration, minimising overall size/weight, and minimising material cost.
+Multi-Objective Optimisation: Explore advanced optimisation algorithms (e.g., genetic algorithms, scipy.optimize) to simultaneously optimise conflicting objectives (e.g., maximising cooling duration, minimising size/weight, and minimising material cost).
 
-Physical Validation: A critical next step would be to design and conduct controlled physical experiments on prototype coolers to rigorously validate the model's predictions. This would involve measuring heat flux and temperature profiles under various conditions to fine-tune and improve the model's accuracy.
+Physical Validation: Design and conduct controlled physical experiments on prototype coolers to rigorously validate model predictions.
 
-Phase Change Material (PCM) Integration: Extend the model to simulate the use of different Phase Change Materials (PCMs) beyond ice. This could allow for maintaining different temperature ranges (e.g., 4 
+Phase Change Material (PCM) Integration: Extend the model to simulate different Phase Change Materials (PCMs) beyond ice. This could allow for maintaining different temperature ranges (e.g., 4 
 ∘
- C without freezing) or achieving longer durations, potentially simplifying logistics.
+ C without freezing) or achieving longer durations.
 
-Vibration and Structural Analysis: Whilst rubber tips mitigate vibration, a future model could explore the thermal implications of repeated mechanical stresses on insulation or the effectiveness of vibration dampening materials.
+Vibration and Structural Analysis: While rubber tips mitigate vibration, a future model could explore thermal implications of repeated mechanical stresses on insulation or the effectiveness of vibration dampening materials.
