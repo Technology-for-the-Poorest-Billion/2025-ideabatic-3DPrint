@@ -1,37 +1,4 @@
 Technical Report on Drone Performance and Testing: [Here](Oliver_Technical_Report.html)
-
-
-# Project Strategy
-
-This project brought together many considerations concerning thermal performance and the use of 3D printing for manufacture, all underpinned by the payload requirements of a selected drone. These factors are closely intertwinned and the project ambitious; this called for effective communication, collaboration and pervasive planning to achieve the outcome we desired. Throughout, we communicated our main ideas and design decisions to Kitty at Ideabatic, to ensure our work culminated in what Ideabatic needed.
-
-Our initial idea was concieved between Oliver, Iain and Hussain during the initial conferance showcasing all available projects. The three of us felt strongly about the use of 3D printing for manufacturing kittys product, and agreed delivery with drones was a compelling idea. This set a clear precident for the project, and we immediately met to discuss our induvidial strengths, weaknesses and aims. Following this, we developed a roadmap for the key deliverables and what we wanted to achieve by the close of the project.
-
-Each team members strengths, weaknesses and aims were summarised:
-Oliver has experience with mechanical design and building drones, as well as practical 3D printing knowledge. He has experience programming, but wants to develop those skills and his understanding of GIT for product development. 
-Iain is excellent with CAD, and has great knowledge of procurement within the department through his time spent with the formula student team. He wants to develop his understanding of the constraints of 3D printing and how these are best mitigated.
-Hussain has good understanding of heat transfer, taking both thermodynamics modules. 
-
-With a good understanding of each others skills and aims, we laid out our ambitions of a complete, working example of a 3D printed vaccine cooler suitable for use with a drone of our choosing. 
-
-To achieve this ambitous goal, a strict plan was set out using a Gantt Chart detailing the timeline of key technical developments, decisions and when manufacturing would have to begin. The plan played to each team members strengths, but also allowed each member to develop and meet their aims of the project. We communicated through a whatsapp group, and made full use of the GIT hub wiki and markdown files to record our research, development and the key lessons learnt. 
-
-Hussain developed the thermal model, using content taught in the heat transfer module to inform the simulation. This tool enabled us to investigate different parameters and weights of payload to make an informed decision with regards to available drones. 
-
-Iain focused on developing the Bulk of the CAD design, investigating ways to downsize the cooler while retaining the many features that make SMILE an effective solution. 
-
-Oliver focused on researching available drones, and any necessary considerations that present themseleves for that use case. He also operated between Hussain and Iain on both the thermal model and CAD, helping bridge all these considerations and bring together the final prototype.
-
-We played to each others strengths well, and were able to learn and develop from each other.
-
-Not everything went smoothly, and in hindsight, the thermal test of our initial prototype should have been better planned, with access to the required equipment proving difficult and requiring some ingenuity. Time should have also been allocated to consider test and failed prints, with hardwork and effective troubleshooting required to develop our initial prototype in time for the interim presentation.  
-
-For the CAD development, we opted to use OnShape - a browser based software that allowed our team to easily share and collaborate on the design. This was very effective, and allowed us to start collaborative CAD development immediately. 
-
-Each team member spent some time becoming familiar with GIT, and this proved very beneficial to our team working abilitiy. In a manner similar to onshape, we were able to quickly develop code, with Oliver and Husaain developing their thermal simulation remotely.The repositry was also incredibly useful as a central hub for all our documentation, and we hope it will become a rich resource for Ideabatic as they continue to develop SMILE.
-
-
-
 # Technical overview
 The technical overview is broken up into three sections
 * Background
@@ -77,5 +44,60 @@ learnt how to split 3d prints
 
 lots about 3d printing in real life
 
-general concept of locating plate is very good 
+general concept of locating plate is very good
+
+Hussain:
+**Reflective Discussion: Alignment with Sustainable Development Goals and UNICEF Principles for Digital Development**
+Our "Technology for the Poorest Billion" project, through the "Smile" vaccine cooler and its drone delivery system, directly addresses critical humanitarian challenges. Our work strongly aligns with Sustainable Development Goals (SDGs) and key UNICEF Principles for Digital Development, reflecting a commitment to impactful, responsible innovation.
+
+At its core, our project aligns with SDG 3: Good Health and Well-being. By reliably maintaining vaccines within the crucial 2 
+∘
+ C−8 
+∘
+ C range, even across demanding terrain, we directly reduce spoilage and enhance childhood immunisation. This mitigates the risk of ineffective doses due to cold chain failures, improving health outcomes and supporting child survival in remote areas.
+
+Our efforts also contribute robustly to SDG 9: Industry, Innovation, and Infrastructure. The Smile cooler represents a significant advancement in cold chain technology. Our 3D printing approach offers considerably more affordable production (£25-30k per unit vs. £300k for injection moulding), democratising access to this relevant manufacturing technology. Focused on drone delivery, it establishes resilient cold chain infrastructure where traditional logistics are unfeasible. Thermal modelling, a crucial component, enables the design to adapt to evolving drone capabilities, enhancing humanitarian logistics capacity.
+
+The project also tackles SDG 10: Reduced Inequalities. By enabling effective vaccine delivery to often marginalised communities in Sub-Saharan Africa via drones, the Smile cooler aims to narrow the gap in access to essential healthcare. These communities historically face significant barriers due to isolation and inadequate infrastructure. Our goal is to ensure equitable access to fundamental vaccination, providing a consistent health baseline that supports improved future healthcare outcomes, directly combating national inequalities.
+
+From the perspective of SDG 12: Responsible Consumption and Production, our design philosophy prioritises minimising waste and promoting resource efficiency. The Smile cooler prevents vaccine spoilage in the field due to temperature fluctuations, translating into substantial savings in time, resources, and energy. Our commitment extends to sustainable practices by planning to utilise recycled materials as filaments for 3D printing, actively reducing environmental footprint and demonstrating a circular economy approach.
+
+Finally, SDG 17: Partnerships for the Goals is fundamental to our achievements. Our collaboration with Ideabatic exemplifies multi-stakeholder engagement, bridging academic research expertise with a social enterprise's invaluable on-the-ground experience. This fosters shared knowledge and resources towards a common development objective, strengthening implementation and revitalising global partnerships for sustainable development.
+
+Our project aligns closely with UNICEF Principles for Digital Development. The Smile cooler's self-closing, magnetic lid embodies 'Design with the User,' mitigating human error and ensuring vaccine integrity. Our meticulous thermal modelling demonstrates a 'Be Data-Driven' approach. Creating a durable cooler for challenging transport conditions shows 'Understand the Existing Ecosystem.' Its impressive cooling duration and adaptability for drone delivery showcase commitment to 'Design for Scale' and 'Be Sustainable,' promising long-term impact. By ensuring vaccine efficacy, the project upholds 'Do No Harm,' prioritising recipient well-being. This collaborative effort embodies 'Be Collaborative,' fostering a shared mission for global health.
+
+In conclusion, our work on the "Smile" cooler transcends a mere technical exercise; it represents a holistic solution, designed with human well-being and sustainable development at its core. By innovating in cold chain technology and delivery methods, we aim to make a profound difference in reducing health inequalities and fostering a more resilient and equitable future for vulnerable communities worldwide.
+
+
+# Project Strategy
+
+This project brought together many considerations concerning thermal performance and the use of 3D printing for manufacture, all underpinned by the payload requirements of a selected drone. These factors are closely intertwinned and the project ambitious; this called for effective communication, collaboration and pervasive planning to achieve the outcome we desired. Throughout, we communicated our main ideas and design decisions to Kitty at Ideabatic, to ensure our work culminated in what Ideabatic needed.
+
+Our initial idea was concieved between Oliver, Iain and Hussain during the initial conferance showcasing all available projects. The three of us felt strongly about the use of 3D printing for manufacturing kittys product, and agreed delivery with drones was a compelling idea. This set a clear precident for the project, and we immediately met to discuss our induvidial strengths, weaknesses and aims. Following this, we developed a roadmap for the key deliverables and what we wanted to achieve by the close of the project.
+
+Each team members strengths, weaknesses and aims were summarised:
+Oliver has experience with mechanical design and building drones, as well as practical 3D printing knowledge. He has experience programming, but wants to develop those skills and his understanding of GIT for product development. 
+Iain is excellent with CAD, and has great knowledge of procurement within the department through his time spent with the formula student team. He wants to develop his understanding of the constraints of 3D printing and how these are best mitigated.
+Hussain has good understanding of heat transfer, taking both thermodynamics modules. 
+
+With a good understanding of each others skills and aims, we laid out our ambitions of a complete, working example of a 3D printed vaccine cooler suitable for use with a drone of our choosing. 
+
+To achieve this ambitous goal, a strict plan was set out using a Gantt Chart detailing the timeline of key technical developments, decisions and when manufacturing would have to begin. The plan played to each team members strengths, but also allowed each member to develop and meet their aims of the project. We communicated through a whatsapp group, and made full use of the GIT hub wiki and markdown files to record our research, development and the key lessons learnt. 
+
+Hussain developed the thermal model, using content taught in the heat transfer module to inform the simulation. This tool enabled us to investigate different parameters and weights of payload to make an informed decision with regards to available drones. 
+
+Iain focused on developing the Bulk of the CAD design, investigating ways to downsize the cooler while retaining the many features that make SMILE an effective solution. 
+
+Oliver focused on researching available drones, and any necessary considerations that present themseleves for that use case. He also operated between Hussain and Iain on both the thermal model and CAD, helping bridge all these considerations and bring together the final prototype.
+
+We played to each others strengths well, and were able to learn and develop from each other.
+
+Not everything went smoothly, and in hindsight, the thermal test of our initial prototype should have been better planned, with access to the required equipment proving difficult and requiring some ingenuity. Time should have also been allocated to consider test and failed prints, with hardwork and effective troubleshooting required to develop our initial prototype in time for the interim presentation.  
+
+For the CAD development, we opted to use OnShape - a browser based software that allowed our team to easily share and collaborate on the design. This was very effective, and allowed us to start collaborative CAD development immediately. 
+
+Each team member spent some time becoming familiar with GIT, and this proved very beneficial to our team working abilitiy. In a manner similar to onshape, we were able to quickly develop code, with Oliver and Husaain developing their thermal simulation remotely.The repositry was also incredibly useful as a central hub for all our documentation, and we hope it will become a rich resource for Ideabatic as they continue to develop SMILE.
+
+
+
 
