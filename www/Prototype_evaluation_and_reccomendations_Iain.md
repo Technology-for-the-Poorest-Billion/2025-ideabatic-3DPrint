@@ -12,7 +12,7 @@ This first prototype was largely successful in being a proof of concept and demo
 
 ### Overall concept:
 The overall concept of filling a thin 3D print with expanding foam is very effective, quick to implement and does add a lot of stiffness and strength to the part. We were able to produce a near working icebox in around a week based on this concept. 
-![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Filling%20V1%20with%20expanding%20foam.jpeg) 
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Filling%20V1%20with%20expanding%20foam.jpeg) 
 
 ### Rivet joining method:
 Rivets do an excellent job of pulling the part together and holding it together, even if the part is slightly misshapen. 
@@ -22,10 +22,10 @@ In addition the rivets are very easy to inspect, very quick to install and can b
 ### Reinforcing plate:
 The reinforcement plate which is riveted on between the outer shell and the inner cylinderical part of the icebox shell does an excellent job of stiffening the part as well as ensuring the part remains the correct shape. Having this part as a seperate piece helps overcome issues with overhangs, while the laser cut manufacturing method allows this plate to span over multiple 3d printed parts ensuring they are all aligned accurately. 
 
-![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/V1%20reinforcing%20plate.png) 
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/V1%20reinforcing%20plate.png) 
 
 
-![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Prototype%20V1%20reinforcing%20plate.png) 
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Prototype%20V1%20reinforcing%20plate.png) 
 
 ### Carousel design:
 The carousel design works very well with the two halves threaded on to each other. It spins freely within the part but can be disassembled easily while providing somewhat of a seal.
@@ -33,7 +33,7 @@ The carousel design works very well with the two halves threaded on to each othe
 ### Vaccine door design:
 The vaccine door works moderately well as a proof of concept, does not close properly though, perhaps magnets can be used to force the door shut, otherwise too much spring preload is needed on the hinge. 
 
-![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/V1%20vaccine%20door.png)
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/V1%20vaccine%20door.png)
 
 ## Areas of improvement:
 
@@ -41,14 +41,14 @@ The vaccine door works moderately well as a proof of concept, does not close pro
 The way the part is simply split into 4 is bad. Although joining the outside shell is not a problem, it is very difficult to seal the centre carousel section especially in the conical areas, and this results in both possible leaks and is quite a bad bearing surface for the carousel. 
 
 
-![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/V1%20Icebox%20center%20seams.png)
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/V1%20Icebox%20center%20seams.png)
 
 In addition the way that the lap joints are designed on the bottom of the part means that an overhang is needed to manufacture them. This results in an inaccurate surface so the part does not fit together properly
 
 ### Part rigidity:
 The 3d prints are too rigid, this may sound like a good thing, but it means if the part warps while printing it cannot be forced back into place into the right shape. This warping is something which is quite common, as the parts are thin shells which have limited rigidity while printing and tend to move around or deform.
 
-![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/V1%20Flange%20rigidity%20misalignment.png)
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/V1%20Flange%20rigidity%20misalignment.png)
 
 we can see how the upper shell doesn't quite fit together properly, and this is a result of one of its constituent parts warping during printing, and the high rigidity of the part results in the part cracking when being riveted rather than deforming into shape.
 
@@ -62,7 +62,7 @@ The chamfers included in the shell design although necessary for printability re
 * When 3D printing, the printer tends to overshoot when faced with sharp changes, it is unable to produce the perfect zero radius corner specified in cad, resulting in it being difficult to assemble the part together near the corners.
 
 
-![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/V1%20Flange%20rigidity%20misalignment.png)
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/V1%20Flange%20rigidity%20misalignment.png)
 
 The cracking here is due to the part being misshapen and having to be forced together by the corners. The corner acts as a stress concentrator which propagates this crack. 
 
