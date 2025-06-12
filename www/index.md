@@ -23,7 +23,7 @@ The technical overview is broken up into three sections
 
 ## Background
 Ideabatic has developed the SMILE icebox for transporting vaccines to remote locations shown below in the image
-![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Smile%20icebox.png)
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Images/Smile%20icebox.png)
 
 This icebox provides significant usability and performance benefits over existing iceboxes, with a vaccine lifespan of 4 days compared to a few hours in conventional vaccine iceboxes through a combination of poor usage and design. However currently these iceboxes are CNCed, which is costly and not scalable.
 
