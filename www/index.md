@@ -4,6 +4,14 @@ title: SMIL3D Project Overview
 Technical Report on Drone Performance and Testing: [Here](Oliver_Technical_Report.html)
 
 Technical Report on Thermal Analysis and Simuulation: [Here](Hussain_Technical_Report.html)
+
+Technical documentation on mechanical design and CAD:
+* 
+
+[Icebox V1 Cad on onshape](https://cad.onshape.com/documents/73ee3694d82d5930b59690d2/w/6676daabe459417f310d4151/e/e961ad116b7d00652cd5d247)
+
+[Icebox V2 Cad on onshape](https://cad.onshape.com/documents/1ee9565f677b677fef8eeaaf/w/12e6d9e0f6dfd3fd041557f7/e/68c45bec8085765a59e01fa4)
+
 # Technical overview
 The technical overview is broken up into three sections
 * Background
@@ -24,7 +32,6 @@ As such the following design brief was given to help Ideabatic further develop t
 In addition to these design considerations, after discussions with Kitty at Ideabatic, drone transportation of the SMILE icebox was also identified as a major opportunity, so lightweighting and downsizing the icebox is a priority.
 
 ### 3D printer constraints
-
 
 
 ## Technical summary
