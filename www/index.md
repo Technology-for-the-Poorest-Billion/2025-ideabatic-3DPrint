@@ -5,7 +5,6 @@ title: Landing page of the website
 
 ## Introduction
 
-This is a [link](Oliver_Technical_Report.md) to interesting content.
 
 
 ### To configure your website:
