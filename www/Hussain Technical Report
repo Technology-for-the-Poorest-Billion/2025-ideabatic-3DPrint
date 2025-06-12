@@ -66,70 +66,35 @@ Flat Outer Foam: Same thermal conductivity as radial outer foam (k_{\text{flat, 
 
 Phase Change Calculation: Total heat ingress determines ice duration. The model estimates time until all ice melts by dividing the energy to melt ice (ice mass × specific latent heat) by the total heat ingress rate.
 
-Boundary Temperature Calculations: The model predicts temperatures at insulation layer interfaces. This is vital for vaccine safety, ensuring the vaccine container interface stays within the 2 
-∘
- C−8 
-∘
- C range, preventing freezing while optimising cooling duration.
+Boundary Temperature Calculations: The model predicts temperatures at insulation layer interfaces. This is vital for vaccine safety, ensuring the vaccine container interface stays within the 2∘C − 8∘C range, preventing freezing while optimising cooling duration.
 
 Baseline Model Parameters:
 
 Initial "baseline" cooler design characteristics:
 
-Mass of ice (m 
-ice
-​
- ): 2.5 kg
+Mass of ice (m ice): 2.5 kg
 
-Length of cylindrical container (L 
-container
-​
- ): 0.2 m
+Length of cylindrical container (L container): 0.2 m
 
-Radius of inner ice container (r 
-ice
-​
- ): 0.08 m
+Radius of inner ice container (rice ): 0.08 m
 
-Thickness of inner insulation (t 
-insulation, inner
-​
- ): 0.005 m
+Thickness of inner insulation (tinsulation, inner): 0.005 m
 
 Thickness of air gap (t_{\text{air_gap}}): 0.04 m
 
-Thickness of outer foam (t 
-foam, outer
-​
- ): 0.08 m
+Thickness of outer foam (t foam, outer): 0.08 m
 
 Thickness for flat inner insulation (t_{\text{flat, insulation, top_bottom}}): 0.005 m
 
 Thickness for flat outer foam (t_{\text{flat, foam, top_bottom}}): 0.05 m.
 
-Specific Latent Heat of Fusion for ice (SLH 
-ice
-​
- ): 334000 J/kg
+Specific Latent Heat of Fusion for ice (SLH ice): 334000 J/kg
 
-Environment Temperature (T 
-environment
-​
- ): 30 
-∘
- C (test condition)
+Environment Temperature (T environment): 30∘C (test condition)
 
-Ice Temperature (T 
-ice, temp
-​
- ): 0 
-∘
- C (constant for melting ice)
+Ice Temperature (T ice, temp): 0∘C (constant for melting ice)
 
-External Air Speed (v 
-external, air
-​
- ): 1.0 m/s (test condition)
+External Air Speed (v external, air): 1.0 m/s (test condition)
 
 Key Assumptions and Simplifications:
 
@@ -174,34 +139,19 @@ A key decision was to fix the ice bottle size, building layers around it. This l
 
 For the shrunk design, fixed ice bottle parameters were:
 
-Length (L 
-container
-​
- ): 0.155 m
+Length (Lcontainer): 0.155 m
 
-Radius (r 
-ice
-​
- ): 0.045 m
+Radius (rice): 0.045 m
 
-Mass (m 
-ice
-​
- ): 1 kg
+Mass (mice): 1 kg
 
 The objective for this smaller shape was to maximise cooling time for drone delivery. This involved iterating on insulation layer thicknesses:
 
-t 
-insulation, inner
-​
-  (inner insulation)
+t insulation, inner  (inner insulation)
 
 t_{\text{air_gap}} (air gap)
 
-t 
-foam, outer
-​
-  (outer foam)
+t foam, outer (outer foam)
 
 t_{\text{flat, insulation, top_bottom}} (flat inner insulation)
 
@@ -210,13 +160,7 @@ t_{\text{flat, foam, top_bottom}} (flat outer foam)
 Material thermal conductivities (k values) and convection coefficients (h values) remained constant during optimisation, focusing on physical dimensions.
 
 5. Experimental Setup (for Virtual Simulations) and Results
-The calculate_cooler_performance function ran simulations to explore the design space around the smaller cooler's fixed inner dimensions (L 
-container
-​
- =0.155 m, r 
-ice
-​
- =0.045 m, 1 kg ice).
+The calculate_cooler_performance function ran simulations to explore the design space around the smaller cooler's fixed inner dimensions (L container  = 0.155 m, r ice = 0.045 m, 1 kg ice).
 
 Insulation layer thicknesses were systematically varied to observe their impact on cooling duration and total heat loss. This identified trade-offs between insulation effectiveness and cooler size. Iteration increments were managed by other team members, with variations within 3D printing capabilities (FDM tolerances typically ±0.1 mm to ±0.5 mm).
 
@@ -224,9 +168,7 @@ The optimised smaller cooler achieved a cooling life significantly greater than 
 
 Diminishing Returns Analysis ("Python Profile"):
 A 'python profile' analysis was conducted to understand insulation efficiency. This script takes ice container dimensions and identifies the point where adding more insulation yields diminishing returns in cooling performance. It systematically varies an insulation thickness (e.g., t 
-insulation
-​
-  from 0.001 m to 0.1 m) and calculates marginal cooling time gain.
+insulation from 0.001 m to 0.1 m) and calculates marginal cooling time gain.
 
 The 'python profile' is a future design tool. It allows teams or Ideabatic to quickly calculate optimal insulation thickness for coolers with different internal dimensions (e.g., for larger drone payloads). It helps identify the 'sweet spot' for insulation, avoiding unnecessary material cost, weight, or size for minimal thermal gain.
 
@@ -273,8 +215,7 @@ Multi-Objective Optimisation: Explore advanced optimisation algorithms (e.g., ge
 
 Physical Validation: Design and conduct controlled physical experiments on prototype coolers to rigorously validate model predictions.
 
-Phase Change Material (PCM) Integration: Extend the model to simulate different Phase Change Materials (PCMs) beyond ice. This could allow for maintaining different temperature ranges (e.g., 4 
-∘
+Phase Change Material (PCM) Integration: Extend the model to simulate different Phase Change Materials (PCMs) beyond ice. This could allow for maintaining different temperature ranges (e.g., 4∘
  C without freezing) or achieving longer durations.
 
 Vibration and Structural Analysis: While rubber tips mitigate vibration, a future model could explore thermal implications of repeated mechanical stresses on insulation or the effectiveness of vibration dampening materials.
