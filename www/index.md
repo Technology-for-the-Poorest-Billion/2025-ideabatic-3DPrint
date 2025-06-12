@@ -1,6 +1,8 @@
 ---
 title: SMIL3D Project Overview
 ---
+Final Presentation: [Here](https://drive.google.com/file/d/1Y6hLBHqVad6hPnDCt58vaAuT1nbFu9Hp/view?usp=drive_link)
+
 Technical Report on Drone Performance and Testing: [Here](Oliver_Technical_Report.html)
 
 Technical Report on Thermal Analysis and Simulation: [Here](Hussain_Technical_Report.html)
