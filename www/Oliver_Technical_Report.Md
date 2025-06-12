@@ -44,6 +44,7 @@ Going forward, it is important this test is repeated to better validate our ther
 ## Drop Test and Cool box protection.
 
 With smile being deployed to remote, rugged locations, we wanted to understand any weaknesses in the design of our initial prototype. Formed mainly of 3D prints filled with foam, we expected the exterior to be susceptible to cracks. To test this, we found a hard concrete cloor and dropped the cooler from a measured height of 1m. See the results of the initial drop below:
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/IMG_7425.jpeg?raw=true)
 
 We were impressed with the results of this test, with the damage being localised to one panel and the coolbox still working as intended. We believe having the prints being rivited together limits crack propagation, as well as the foam interior absorbing most of the impact. To better understand the performance, we increased the height we dropped from, dropping from 1m, 2m and 3m on both grass and concrete. The final state of the coolbox can be seen:
 
