@@ -23,14 +23,14 @@ The technical overview is broken up into three sections
 
 ## Background
 Ideabatic has developed the SMILE icebox for transporting vaccines to remote locations shown below in the image
-![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Images/Smile%20icebox.png)
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Smile%20icebox.png)
 
 This icebox provides significant usability and performance benefits over existing iceboxes, with a vaccine lifespan of 4 days compared to a few hours in conventional vaccine iceboxes through a combination of poor usage and design. However currently these iceboxes are CNCed, which is costly and not scalable.
 
 ### Design brief
 As such the following design brief was given to help Ideabatic further develop the SMILE icebox. With the four areas highlighted specifically mentioned in the technical summary. 
 
-![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Images/Design%20brief.png)
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Design%20brief.png)
 
 In addition to these design considerations, after discussions with Kitty at Ideabatic, drone transportation of the SMILE icebox was also identified as a major opportunity, so lightweighting and downsizing the icebox is a priority.
 
@@ -41,7 +41,7 @@ The technical summary focuses on the four areas highlighted in the design brief.
 ### 1: Manufactured protoypes
 Two full function prototypes of the SMILE icebox were developed.
 
-![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Images/Icebox%20comparison.png) 
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Icebox%20comparison.png) 
 
 These prototypes are built off a general concept [initial concept](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Design%20review%20and%20initial%20concept%20-%20Iain.md) of a thin 3d printed shell stiffened and insulated with expanding foam. Unlike the current SMILE design, it is based on a 1L icepack bottle and only has 10 vaccine compartments as opposed to 19. Despite this the later prototype has preserved all of the features present in the large scale SMILE, including a self closing door and carousel. 
 
