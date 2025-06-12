@@ -1,3 +1,4 @@
+[link](/2025-ideabatic-3DPrint/linkedpage.html)
 # Oliver Griffiths Technical Report
 Author: Oliver Griffiths
 This project has considered a range of technical areas. This report gives a brief overview of some of these aspects, looking at the key considerations made when selecting a suitable drone and the thermal and destruction testing of our initial prototype. The work will be summarised, and the key takeaways presented, serving as a basis for further development of this project. 
