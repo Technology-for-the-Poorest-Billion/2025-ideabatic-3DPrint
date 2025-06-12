@@ -30,7 +30,7 @@ This icebox provides significant usability and performance benefits over existin
 ### Design brief
 As such the following design brief was given to help Ideabatic further develop the SMILE icebox. With the four areas highlighted specifically mentioned in the technical summary. 
 
-![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Design%20brief.png)
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Images/Design%20brief.png)
 
 In addition to these design considerations, after discussions with Kitty at Ideabatic, drone transportation of the SMILE icebox was also identified as a major opportunity, so lightweighting and downsizing the icebox is a priority.
 
