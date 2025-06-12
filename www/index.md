@@ -6,7 +6,7 @@ Technical Report on Drone Performance and Testing: [Here](Oliver_Technical_Repor
 Technical Report on Thermal Analysis and Simulation: [Here](Hussain_Technical_Report.html)
 
 Technical documentation on mechanical design and CAD:
-* [Design review and initial concept](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Design%20review%20and%20initial%20concept%20-%20Iain.html)
+* [Design review and initial concept](Design_review_and_concept_Iain.html)
 * [Prototype V1 Cad and design](Prototype_V1_CAD_and_design_Iain.html)
 * [Prototype evaluation and recommendation](Prototype_evaluation_and_reccomendations_Iain.html)
 * [Bill of materials](Bill_of_materials_Iain.html)
