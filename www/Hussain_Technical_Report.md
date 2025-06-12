@@ -1,5 +1,5 @@
 Individual Report: Thermal Performance Modelling and Optimisation
-Author: [Hussain Ahmed Khan]
+Author: Hussain Ahmed Khan
 
 1. Introduction: Addressing the Cold Chain Challenge
 The "Technology for the Poorest Billion" project addresses the need for reliable cold chain solutions where infrastructure is limited. The "Smile" cooler aims to keep vaccines cool and ensure their safe transport over long, difficult journeys.
