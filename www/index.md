@@ -1,3 +1,6 @@
+---
+title: SMIL3D Project Overview
+---
 Technical Report on Drone Performance and Testing: [Here](Oliver_Technical_Report.html)
 # Technical overview
 The technical overview is broken up into three sections
