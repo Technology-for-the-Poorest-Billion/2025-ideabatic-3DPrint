@@ -13,9 +13,7 @@ The cooler targets Sub-Saharan Africa. This region typically has high ambient te
 My contribution focused on developing and refining a thermal simulation model. This model predicts cooler performance and optimises insulation for challenging, off-grid vaccine transport. This report details the model's technical aspects, capabilities, design influence, and future development.
 
 2. Technical Presentation of the Solution (Handover Notes for Partner: Ideabatic)
-The thermal model simulates heat transfer through a multi-layered cylindrical cooler. Its main purpose is to predict heat ingress and the duration ice maintains the cooler's internal temperature at approximately 0 
-∘
- C. This enables rapid virtual prototyping, reduces expensive physical tests, allows performance prediction, and aids material/dimension selection.
+The thermal model simulates heat transfer through a multi-layered cylindrical cooler. Its main purpose is to predict heat ingress and the duration ice maintains the cooler's internal temperature at approximately 0∘ C. This enables rapid virtual prototyping, reduces expensive physical tests, allows performance prediction, and aids material/dimension selection.
 
 The model considers two fundamental heat transfer modes:
 
@@ -23,95 +21,39 @@ Conduction: Heat transfer through solid insulation layers.
 
 Natural Convection: Heat transfer across the internal air gap and from the external surface to the ambient air.
 
-The analysis uses the Ohm's Law Analogy for heat transfer, where heat flow (Q 
-dot
-​
- ) is proportional to the temperature difference (ΔT) divided by the total thermal resistance (R 
-th
-​
- ):
+The analysis uses the Ohm's Law Analogy for heat transfer, where heat flow (Q dot) is proportional to the temperature difference (ΔT) divided by the total thermal resistance (Rth):
 
 
-Q 
-dot
-​
- = 
-R 
-th
-​
- 
-ΔT
+Qdot = ΔT/Rth 
 ​
  
 Model Components and Calculations:
 
 Radial Heat Transfer (Cylindrical Sides):
-The model calculates heat flow through the side walls using the R 
-th 
-r
-​
- adial
-​
-  function. This applies the standard formula for cylindrical shell thermal resistance:
+The model calculates heat flow through the side walls using the Rth radial function. This applies the standard formula for cylindrical shell thermal resistance:
 
-
-R 
-th,radial
-​
- = 
-2πLk
-ln(r 
-2
-​
- /r 
-1
-​
- )
+R th, radial = 2πLk ln(r2/r1)
 ​
  
 
-where r 
-1
-​
-  is the inner radius, r 
-2
-​
-  is the outer radius, L is the length, and k is the thermal conductivity.
+where r1 is the inner radius, r2  is the outer radius, L is the length, and k is the thermal conductivity.
 
 Radial layers include:
 
-Inner Insulation Layer: Outside the ice container. Thermal conductivity (k 
-insulation, inner
-​
- ) set to 0.03 W/mK.
+Inner Insulation Layer: Outside the ice container. Thermal conductivity (k insulation, inner) set to 0.03 W/mK.
 
-Air Gap: Modelled as convective resistance. Natural convection coefficient (h_{\text{air_gap}}) set to 3.0 W/m 
-2
- K.
+Air Gap: Modelled as convective resistance. Natural convection coefficient (h_{\text{air_gap}}) set to 3.0 W/m2 K.
 
 Outer Foam Layer: Outermost insulation. Thermal conductivity (k 
-foam, outer
-​
- ) set to 0.03 W/mK.
+foam, outer) set to 0.03 W/mK.
 External convection from the cooler's outer surface to ambient air is also included, using an empirical relationship based on external air speed.
 
 Planar Heat Transfer (Top and Bottom):
-Heat flow through the flat top and bottom surfaces is calculated using the R 
-th 
-l
-​
- inear
-​
-  function. This applies the standard formula for flat slab thermal resistance:
+Heat flow through the flat top and bottom surfaces is calculated using the Rth linear function. This applies the standard formula for flat slab thermal resistance:
 
 
-R 
-th,linear
-​
- = 
-A⋅k
-t
-​
+Rth,linear  = t/ A⋅k
+
  
 
 where t is the thickness, A is the area, and k is the thermal conductivity.
