@@ -53,7 +53,7 @@ We were impressed with the results of this test, with the damage being localised
 
 Overall, we were very impressed with how the coolbox performed. At the end of this "destruction" testing, the coolbox still operated as intended, with all features working and the foam interior in tact. There was significant aesthatic damage to the 3D prints, something we wanted to mitiage with our next prototype. With most of the damage beign concentrated on the corners, I designed up some TPU bumpers (TPU is a flexible plastic that can be 3D pritned) that would rivet from the inside and be secured to each corner, as well as including the mountaing point for a strap; see the finished results below:
 
-![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/IMG_7464.jpeg?raw=true
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/IMG_7464.jpeg?raw=true)
 
 Initially, with an infill of 15%, these parts were stiff and did not seem appropriate. Reducing the infill to 5% and using a honeycomb infill pattern rsulted in significantly more compliant bumpers that easily deform when the coolbox is dropped onto a cooler. These parts have not been extensively tested, and weigh a significant amount. Further field testing should be performed to further optimise the design of these bumpers and check their performance. 
 
