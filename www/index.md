@@ -3,7 +3,7 @@ title: SMIL3D Project Overview
 ---
 Technical Report on Drone Performance and Testing: [Here](Oliver_Technical_Report.html)
 
-Technical Report on Thermal Analysis and Simuulation: [Here](Hussain_Technical_Report.html)
+Technical Report on Thermal Analysis and Simuulation: [Thermal](Hussain_Technical_Report.html)
 
 Technical documentation on mechanical design and CAD:
 * [Design review and initial concept](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/Design%20review%20and%20initial%20concept%20-%20Iain.md)
