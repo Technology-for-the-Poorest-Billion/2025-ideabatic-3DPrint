@@ -5,7 +5,7 @@ This project has considered a range of technical areas. This report gives a brie
 Where appropriate, links will be provided to other pages containing more detail. 
 
 ## Drone Performance and Regulation considerations:
-One of the main objectives of this project is to develop a suitable vaccine cooler that could be delieverd on foot or by drone. Ideabatic were keen to explore this avenue. As dronesare becoming bigger, flying further and falling in price, they are becoming better positioned for this use. There are many aspects beyond technical design to enable these drone deliveries, with regulation being a big factor that will need to be explored further if this work develops.
+One of the main objectives of this project is to develop a suitable vaccine cooler that could be delieverd on foot or by drone. Ideabatic were keen to explore this avenue. As drones are becoming bigger, flying further and falling in price, they are becoming better positioned for this use. There are many aspects beyond technical design to enable these drone deliveries, with regulation being a big factor that will need to be explored further if this work develops.
 
 Having experience developing a large drone for offshore windturbing inspections, I was well placed to lead this research with a good understanding of the currently available technology. After speaking with kitty, I developed a good understanding of a typical vaccine delivery journey and the limitations of current infrastructure. 
 
@@ -21,7 +21,7 @@ With an idea of the kind of solution that could be made and the size of drone th
 
 From this information alone, we were able to make an informed decision of a rough weight of the payload, aiming to keep it below 2.5kg and have a flight time above 30 minutes, and range of 30km (round trip). With ISS aerospace based in the UK, they seemed like a good option to aid in the development of the payload. 
 
-After getting in touch, they kindly arranged for us to meet with one of their engineers to further discuss the project. The interview was filled with great information and advice, and has been documented in the wiki: https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/wiki/Drone-Sizing-,-constraints-and-regulation. 
+After getting in touch, they kindly arranged for us to meet with one of their engineers to further discuss the project. The interview was filled with great information and advice, and has been documented in the [wiki] (https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/wiki/Drone-Sizing-,-constraints-and-regulation). 
 
 To summarise, they felt their drone was a suitable choice and that our prototype cooler would work well with their drone. They spent a long time informing us of regulation and using the drone, and the snags we could expect to meet. Their largest concern was the nature of the operation being BVLOS (Beyond Visual Line of Sight). Whilst they didnt comment on any specific regions, they had operated in rural Africa before and stated that regulation often wasn't in place, or was only partially in place for BVLOS. However, they had stated they had been granted special clearance before, and felt the nature of our use could be granted similar special permissions to operate in these remote regions. 
 
