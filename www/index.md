@@ -46,27 +46,38 @@ lots about 3d printing in real life
 
 general concept of locating plate is very good
 
-Hussain:
-**Reflective Discussion: Alignment with Sustainable Development Goals and UNICEF Principles for Digital Development**
-Our "Technology for the Poorest Billion" project, through the "Smile" vaccine cooler and its drone delivery system, directly addresses critical humanitarian challenges. Our work strongly aligns with Sustainable Development Goals (SDGs) and key UNICEF Principles for Digital Development, reflecting a commitment to impactful, responsible innovation.
+Reflective Discussion: Alignment with Sustainable Development Goals and UNICEF Principles for Digital Development
+Our "Technology for the Poorest Billion" project, through the "Smile" vaccine cooler and its drone delivery system, addresses critical humanitarian challenges. The work aligns directly with Sustainable Development Goals (SDGs) and key UNICEF Principles for Digital Development. This reflects a commitment to impactful, responsible innovation.
 
-At its core, our project aligns with SDG 3: Good Health and Well-being. By reliably maintaining vaccines within the crucial 2 
+The project aligns with SDG 3: Good Health and Well-being. By maintaining vaccines within the 2 
 ∘
  C−8 
 ∘
- C range, even across demanding terrain, we directly reduce spoilage and enhance childhood immunisation. This mitigates the risk of ineffective doses due to cold chain failures, improving health outcomes and supporting child survival in remote areas.
+ C range across demanding terrain, we directly reduce spoilage and improve childhood immunisation rates. This mitigates ineffective doses due to cold chain failures, enhancing health outcomes and child survival in remote areas.
 
-Our efforts also contribute robustly to SDG 9: Industry, Innovation, and Infrastructure. The Smile cooler represents a significant advancement in cold chain technology. Our 3D printing approach offers considerably more affordable production (£25-30k per unit vs. £300k for injection moulding), democratising access to this relevant manufacturing technology. Focused on drone delivery, it establishes resilient cold chain infrastructure where traditional logistics are unfeasible. Thermal modelling, a crucial component, enables the design to adapt to evolving drone capabilities, enhancing humanitarian logistics capacity.
+Our efforts also contribute to SDG 9: Industry, Innovation, and Infrastructure. The Smile cooler advances cold chain technology. Our 3D printing approach provides considerably more affordable production (£25-30k per unit vs. £300k for injection moulding), broadening access to this manufacturing method. Focused on drone delivery, it establishes resilient cold chain infrastructure where traditional logistics fail. Thermal modelling, a key component, enables design adaptation to evolving drone capabilities, improving humanitarian logistics.
 
-The project also tackles SDG 10: Reduced Inequalities. By enabling effective vaccine delivery to often marginalised communities in Sub-Saharan Africa via drones, the Smile cooler aims to narrow the gap in access to essential healthcare. These communities historically face significant barriers due to isolation and inadequate infrastructure. Our goal is to ensure equitable access to fundamental vaccination, providing a consistent health baseline that supports improved future healthcare outcomes, directly combating national inequalities.
+The project addresses SDG 10: Reduced Inequalities. By enabling effective drone delivery of vaccines to often marginalised communities in Sub-Saharan Africa, the Smile cooler aims to close gaps in essential healthcare access. These communities historically face significant barriers due to isolation and poor infrastructure. Our goal is to ensure equitable access to fundamental vaccination, providing a consistent health baseline and combating national inequalities.
 
-From the perspective of SDG 12: Responsible Consumption and Production, our design philosophy prioritises minimising waste and promoting resource efficiency. The Smile cooler prevents vaccine spoilage in the field due to temperature fluctuations, translating into substantial savings in time, resources, and energy. Our commitment extends to sustainable practices by planning to utilise recycled materials as filaments for 3D printing, actively reducing environmental footprint and demonstrating a circular economy approach.
+For SDG 12: Responsible Consumption and Production, our design prioritises waste minimisation and resource efficiency. The Smile cooler prevents vaccine spoilage in the field from temperature fluctuations, resulting in significant savings in time, resources, and energy. Our commitment extends to sustainable practices by planning to use recycled materials as 3D printing filaments, actively reducing environmental impact and demonstrating a circular economy approach.
 
-Finally, SDG 17: Partnerships for the Goals is fundamental to our achievements. Our collaboration with Ideabatic exemplifies multi-stakeholder engagement, bridging academic research expertise with a social enterprise's invaluable on-the-ground experience. This fosters shared knowledge and resources towards a common development objective, strengthening implementation and revitalising global partnerships for sustainable development.
+Finally, SDG 17: Partnerships for the Goals is central to our achievements. Our collaboration with Ideabatic demonstrates effective multi-stakeholder engagement, combining academic research with a social enterprise's practical field experience. This fosters shared knowledge and resources towards a common development objective, strengthening implementation and global partnerships for sustainable development.
 
-Our project aligns closely with UNICEF Principles for Digital Development. The Smile cooler's self-closing, magnetic lid embodies 'Design with the User,' mitigating human error and ensuring vaccine integrity. Our meticulous thermal modelling demonstrates a 'Be Data-Driven' approach. Creating a durable cooler for challenging transport conditions shows 'Understand the Existing Ecosystem.' Its impressive cooling duration and adaptability for drone delivery showcase commitment to 'Design for Scale' and 'Be Sustainable,' promising long-term impact. By ensuring vaccine efficacy, the project upholds 'Do No Harm,' prioritising recipient well-being. This collaborative effort embodies 'Be Collaborative,' fostering a shared mission for global health.
+Our project also aligns closely with UNICEF Principles for Digital Development:
 
-In conclusion, our work on the "Smile" cooler transcends a mere technical exercise; it represents a holistic solution, designed with human well-being and sustainable development at its core. By innovating in cold chain technology and delivery methods, we aim to make a profound difference in reducing health inequalities and fostering a more resilient and equitable future for vulnerable communities worldwide.
+'Design with the User': The self-closing, magnetic lid reduces human error, ensuring vaccine integrity.
+
+'Be Data-Driven': Meticulous thermal modelling guides design decisions through quantitative analysis.
+
+'Understand the Existing Ecosystem': Durable cooler design accommodates challenging transport conditions.
+
+'Design for Scale' & 'Be Sustainable': The cooler's cooling duration and drone adaptability promise long-term impact and resource efficiency.
+
+'Do No Harm': Ensuring vaccine efficacy and safe delivery prioritises recipient well-being.
+
+'Be Collaborative': The partnership fosters a shared mission for global health.
+
+In conclusion, the "Smile" cooler is a comprehensive solution, designed with human well-being and sustainable development as core objectives. Through cold chain technology and delivery innovation, we aim to reduce health inequalities and build a more resilient future for vulnerable communities worldwide.
 
 
 # Project Strategy
