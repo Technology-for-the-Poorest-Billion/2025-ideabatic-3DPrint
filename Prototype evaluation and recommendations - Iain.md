@@ -79,4 +79,7 @@ The rivet reinforcement plates shown in the CAD file below in purple.
 * However they were laser cut out of plywood which was a poor material choice, as virtually every plate cracked along the plywood grains. MDF or any isentropic material would work better.
 * They were also somewhat of a hassle to install should test if it is possible to go without them. 
 
+### Bolt attachment
+Only 5 bolts attach onto 
+
 

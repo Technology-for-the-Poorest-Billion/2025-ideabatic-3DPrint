@@ -61,21 +61,12 @@ Surpassing the design brief requirements to explore low cost manufacturing of th
 
 These prototypes are built off a general concept [link to initial concepts] of a thin 3d printed shell stiffened and insulated with expanding foam. Unlike the current SMILE design, it is based on a 1L icepack bottle and only has 10 vaccine compartments as opposed to 19. Despite this the later prototype has preserved all of the features present in the large scale SMILE, featuring a self closing door, a vaccine carousel and various sealing and gasket features albeit designed with a focus on manufacture via 3D printing. 
 
-In addition the new prototype is significantly lighter [**INSERT TEXT HERE**] and features mounting for drone transport . 
+In addition the new prototypes is significantly lighter weighing in at 1.6kg versus 4.5kg for the original design and features mounting for drone transport . 
 
 With an estimated material cost of [£65](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Bill%20of%20materials.md) for the prototype we have fully demonstrated the feasiblity of low cost manufacturing and these prototypes can act as a spring broad for future in service designs. 
 
 ### 2: Engineering lessons
-Alongside the finished prototypes, one of the most useful lessons learnt from this project are the engineering lessons learnt throughout the project.
-
-General concept is good
-
-learnt how to split 3d prints
-
-lots about 3d printing in real life
-
-general concept of locating plate is very good 
-
+A lot was learned about 
 
 
 
