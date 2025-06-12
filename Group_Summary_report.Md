@@ -57,7 +57,7 @@ The technical summary focuses on the four areas highlighted in the design brief.
 ### 1: Manufactured protoypes
 Surpassing the design brief requirements to explore low cost manufacturing of the icebox hex case and carousel, two full function prototypes of the SMILE icebox were developed.
 
-![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Placeholder%20image.png) 
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/Images/Icebox%20comparison.png) 
 
 These prototypes are built off a general concept [link to initial concepts] of a thin 3d printed shell stiffened and insulated with expanding foam. Unlike the current SMILE design, it is based on a 1L icepack bottle and only has 10 vaccine compartments as opposed to 19. Despite this the later prototype has preserved all of the features present in the large scale SMILE, featuring a self closing door, a vaccine carousel and various sealing and gasket features albeit designed with a focus on manufacture via 3D printing. 
 
