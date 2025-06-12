@@ -66,20 +66,21 @@ The chamfers included in the shell design although necessary for printability re
 
 The cracking here is due to the part being misshapen and having to be forced together by the corners. The corner acts as a stress concentrator which propagates this crack. 
 
-![image]()
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/V1%20drop%20test%20corner%20cracking.png)
 
 It can also be seen here how the corners are extra vulnerable when dropped, with the crack propagating along the line of the corner where the stress is highest. 
 
 ### Rivet reinforcement plates
 The rivet reinforcement plates shown in the CAD file below in purple.
 
-![image]()
+![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/V1%20rivet%20reinforcement%20plate.png)
 
 * These plates did work effectively to prevent the 3D print from cracking as the rivets clinched down.
 * However they were laser cut out of plywood which was a poor material choice, as virtually every plate cracked along the plywood grains. MDF or any isentropic material would work better.
 * They were also somewhat of a hassle to install should test if it is possible to go without them. 
 
 ### Bolt attachment
-Only 5 bolts attach onto 
+Only 5 bolts attach between the shells this results in a weaker attachment between the two halves. A method needs to be found to rectify this.
+
 
 
