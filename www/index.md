@@ -1,10 +1,10 @@
 ---
 title: Landing page of the website
 ---
-[link](/2025-ideabatic-3DPrint/Oliver_Technical_Report.html)
+
 
 ## Introduction
-
+Technical Report on Drone Performance and Testing: [Here](/2025-ideabatic-3DPrint/Oliver_Technical_Report.html)
 
 
 ### To configure your website:
