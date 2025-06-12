@@ -47,10 +47,11 @@ With smile being deployed to remote, rugged locations, we wanted to understand a
 
 We were impressed with the results of this test, with the damage being localised to one panel and the coolbox still working as intended. We believe having the prints being rivited together limits crack propagation, as well as the foam interior absorbing most of the impact. To better understand the performance, we increased the height we dropped from, dropping from 1m, 2m and 3m on both grass and concrete. The final state of the coolbox can be seen:
 
-Overall, we were very impressed with how the coolbox performed. At the end of this "destruction" testing, the coolbox still operated as intended, with all features working and the foam interior in tact. There was significant aesthatic damage to the 3D prints, something we wanted to mitiage with our final design. 
+Overall, we were very impressed with how the coolbox performed. At the end of this "destruction" testing, the coolbox still operated as intended, with all features working and the foam interior in tact. There was significant aesthatic damage to the 3D prints, something we wanted to mitiage with our next prototype. With most of the damage beign concentrated on the corners, I designed up some TPU bumpers (TPU is a flexible plastic that can be 3D pritned) that would rivet from the inside and be secured to each corner. See the CAD preview below:
 
-results 
 
-action taken 
+Initially, with an infill of 15%, these parts were stiff and did not seem appropriate. Reducing the infill to 5% and using a honeycomb infill pattern rsulted in significantly more compliant bumpers that easily deform when the coolbox is dropped onto a cooler. These parts have not been extensively tested, and weigh a significant amount. Further field testing should be performed to further optimise the design of these bumpers and check their performance. 
 
-effectiveness of solution
+Another possibility from the results of the test and observations during assembly, is to change the material of the exterior walls of the cool box to be constructed from TPU. We didnt have time to do this during this prototyping phase, due to PLA being easier to print. However, In assembly the PLA parts would often crack when being riveted, and this was especially true with our most recent prototype where we significantly reduced the wall thickness. As most of the structure of the product comes from the expanding foam and the centre carousel parts (which should be kept as a stiff material), the exterior walls really only serve as a means to apply expanding foam to the interior for insulation. 
+
+Switching to TPU for these exterior shells is a promising route - the foam could still be accurately applied, but the assembly would be significantly more compliant with reduced risk of cracking during assembly, as well as improved resilience to impacts and no need for the TPU bumpers we have designed (and thus saving a lot of weight). I believe this is an interesting avenue that should be explored with anyone continuing this project, with the biggest difficulty in using such a material is achieving consistent printing performance. 
