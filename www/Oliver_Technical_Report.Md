@@ -50,7 +50,7 @@ We were impressed with the results of this test, with the damage being localised
 
 ![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/IMG_7440.jpeg?raw=true)
 
-Overall, we were very impressed with how the coolbox performed. At the end of this "destruction" testing, the coolbox still operated as intended, with all features working and the foam interior in tact. There was significant aesthatic damage to the 3D prints, something we wanted to mitiage with our next prototype. With most of the damage beign concentrated on the corners, I designed up some TPU bumpers (TPU is a flexible plastic that can be 3D pritned) that would rivet from the inside and be secured to each corner. See the CAD preview below:
+Overall, we were very impressed with how the coolbox performed. At the end of this "destruction" testing, the coolbox still operated as intended, with all features working and the foam interior in tact. There was significant aesthatic damage to the 3D prints, something we wanted to mitiage with our next prototype. With most of the damage beign concentrated on the corners, I designed up some TPU bumpers (TPU is a flexible plastic that can be 3D pritned) that would rivet from the inside and be secured to each corner, as well as including the mountaing point for a strap; see the CAD preview below:
 
 ![image](https://github.com/Technology-for-the-Poorest-Billion/2025-ideabatic-3DPrint/blob/main/www/IMG_7432.jpeg?raw=true)
 
