@@ -80,7 +80,7 @@ Our project also aligns closely with UNICEF Principles for Digital Development:
 In conclusion, the "Smile" cooler is a comprehensive solution, designed with human well-being and sustainable development as core objectives. Through cold chain technology and delivery innovation, we aim to reduce health inequalities and build a more resilient future for vulnerable communities worldwide.
 
 
-# Project Strategy
+# Project Strategy: Oliver Griffiths
 
 This project brought together many considerations concerning thermal performance and the use of 3D printing for manufacture, all underpinned by the payload requirements of a selected drone. These factors are closely intertwinned and the project ambitious; this called for effective communication, collaboration and pervasive planning to achieve the outcome we desired. Throughout, we communicated our main ideas and design decisions to Kitty at Ideabatic, to ensure our work culminated in what Ideabatic needed.
 
